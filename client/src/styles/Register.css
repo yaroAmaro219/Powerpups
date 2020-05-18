@@ -1,0 +1,101 @@
+.register-main-container {
+  display: flex;
+
+}
+
+.register-right-container {
+  width: 50%;
+  background-color: rgb(231, 231, 231);
+}
+
+.register-left-co-container {
+  margin: 0 5%;
+}
+
+.register-signin-container {
+  width: 90%;
+  padding: 5% 0 5% 0;
+  margin: 5% auto;
+}
+
+.register-left-container {
+  width: 50%;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(237, 250, 234);
+}
+
+.left-container-content p {
+  font-style: normal;
+  text-align: left;
+  font-family: Avenir;
+  font-size: 2.4vw;
+}
+
+.left-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.register-input-style {
+  width: 70%;
+  border: none;
+  border-bottom: solid rgb(0, 146, 12) 1px;
+  font-size: 3vw;
+  display: block;
+  margin: 7% auto;
+  background-color: rgb(231, 231, 231);
+  outline: none;
+}
+
+.register-title {
+  text-align: center;
+  color: rgb(0, 146, 12);
+  padding: 5% 3% 5% 3%;
+  font-size: 4.4vw
+}
+
+.register-title-left {
+  text-align: center;
+  color: rgb(0, 146, 12);
+  padding: 0 3% 5% 3%;
+  font-size: 4.4vw;
+}
+
+.register-submit-button {
+  background-color: rgb(0, 146, 12);
+  color: rgb(231, 231, 231);
+  padding: 3% 5%;
+  font-size: x-large;
+  border-radius: 5%;
+  width: auto;
+  margin: 5% auto 10% auto;
+}
+
+.have-account-title {
+  color: rgb(46, 45, 45);
+  margin: 3% auto;
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+.register-signin-redirect-button {
+  display: block;
+  margin: 8% auto 8% auto;
+  font-size: x-large;
+  background-color: rgb(0, 146, 12);
+  color: rgb(231, 231, 231);
+  padding: 3% 7%;
+  border-radius: 5%;
+  width: auto;
+}
+
+.register-signin-redirect-button:hover,
+.register-submit-button:hover {
+  background-color: rgb(0, 90, 8);
+  cursor: pointer;
+}
