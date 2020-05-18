@@ -1,0 +1,80 @@
+.login-container {
+  display: flex;
+}
+
+.right-container {
+  width: 50%;
+  background-image: url();
+  justify-content: space-between;
+  background: rgb(237, 250, 234);
+}
+
+.need-account {
+  margin: 2vw 0 0 0;
+}
+
+.left-container {
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(231, 231, 231);
+}
+
+.register-button {
+  display: block;
+  margin: 8% auto 8% auto;
+  font-size: x-large;
+  background-color: rgb(0, 146, 12);
+  color: rgb(231, 231, 231);
+  padding: 3% 7%;
+  border-radius: 5%;
+  width: auto;
+}
+
+.register-button:hover,
+.submit-button:hover {
+  background-color: rgb(37, 17, 82);
+  cursor: pointer;
+
+}
+
+.account-title {
+  color:rgb(75, 1, 195);
+  margin: 3% auto;
+  font-size: 2.5vw;
+}
+
+
+
+.sign-in-title {
+  color: rgb(75, 1, 195);
+  margin: 5% 0;
+  text-align: center;
+  font-size: 2.5vw;
+}
+
+.input-style {
+  width: 70%;
+  border: none;
+  border-bottom: solid rgb(75, 1, 195) 1px;
+  font-size: large;
+  display: block;
+  margin: 5% auto;
+  background-color: rgb(231, 231, 231);
+  outline: none;
+}
+
+.input-container {
+  display: block;
+}
+
+.submit-button {
+  display: block;
+  margin: 8% auto 8% auto;
+  font-size: x-large;
+  background-color: rgb(0, 146, 12);
+  color: rgb(231, 231, 231);
+  padding: 3% 7%;
+  border-radius: 5%;
+  width: auto;
+}
