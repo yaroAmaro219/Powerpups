@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { GOOGLE_API_KEY } from '../config'
+import {WEATHER_API_KEY} from '../config'
 
 export default class GeoLocation extends Component {
   constructor(props) {
@@ -54,6 +55,12 @@ export default class GeoLocation extends Component {
         {
           this.state.latitude && this.state.longitude ?
             <img class="geo-img" src={`https://maps.googleapis.com/maps/api/staticmap?center=${this.state.latitude},${this.state.longitude}&zoom=14&size=400x400&markers=color:red%7C${this.state.latitude},${this.state.longitude}&key=${GOOGLE_API_KEY}`} alt='yoda' />
+            :
+            null
+        }
+        {
+            this.state.latitude && this.state.longitude ?
+            <div>{`http://api.openweathermap.org/data/2.5/weather?lat=${this.state.latitude}&lon=${this.state.longitude}&appid=${WEATHER_API_KEY}`}</div>
             :
             null
         }

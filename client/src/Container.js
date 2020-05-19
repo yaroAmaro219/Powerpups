@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {withRouter} from 'react-router-dom'
 import {Route, Switch} from 'react-router-dom'
-import GeoLocation from './components/GeoLocation'
+import Home from './components/Home'
 import Nav from './components/Nav'
 
 import Login from './components/Login'
@@ -25,10 +25,16 @@ class Container extends Component {
         password: ''
       },
       registerFormData: {
-        full_name: '',
+        first_name: '',
+        last_name: '',
+        location: '',
         email: '',
+        phone: '',
+        department: '',
+        title: '',
         password: ''
-      }
+      },
+      first_name: '',
     }
   }
 
@@ -70,11 +76,30 @@ class Container extends Component {
     this.props.history.push("/")
   }
 
+  authHandleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(prevState => ({
+      authFormData: {
+        ...prevState.authFormData,
+        [name]: value
+      }
+    }))
+  }
+
+  registerHandleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState(prevState => ({
+      registerFormData: {
+        ...prevState.registerFormData,
+        [name]: value
+      }
+    }))
+  }
+
   render() {
     return (
       <div>
         <Nav />
-        <GeoLocation />
         
         <Switch>
           <Route exact path="/login" render={(props) => (
@@ -89,6 +114,11 @@ class Container extends Component {
               handleRegister={this.handleRegister}
               handleChange={this.authHandleChange}
               registerFormData={this.state.authFormData}/>
+          )} />
+          <Route exact path="/" render={(props) => (
+            <Home
+              first_name={this.state.first_name}
+            />
           )}/>
         </Switch>
 
