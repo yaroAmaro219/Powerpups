@@ -24,9 +24,13 @@ const Register = (props) => {
           <h1 className='register-title' >Register</h1>
           <div className='register-input-container'>
 
-            <input className='register-input-style' name='first_name' type='text' placeholder='Full Name' value={registerFormData.full_name} onChange={handleChange} />
+            <input className='register-input-style' name='first_name' type='text' placeholder='First Name' value={registerFormData.first_name} onChange={handleChange} />
+            <input className='register-input-style' name='first_name' type='text' placeholder='Last Name' value={registerFormData.last_name} onChange={handleChange} />
+            <input className='register-input-style' placeholder="Office Location" name="location" type="text" value={registerFormData.location} onChange={handleChange} />
             <input className='register-input-style' name='email' type='text' placeholder='Email' value={registerFormData.email} onChange={handleChange} />
-            {/* <input className='register-input-style' placeholder="Address" name="location" type="text" value={registerFormData.location} onChange={handleChange} /> */}
+            <input className='register-input-style' placeholder="Phone Number" name="phone" type="text" value={registerFormData.phone} onChange={handleChange} />
+            <input className='register-input-style' placeholder="Department" name="department" type="text" value={registerFormData.department} onChange={handleChange} />
+            <input className='register-input-style' placeholder="Title" name="title" type="text" value={registerFormData.title} onChange={handleChange} />
             <input className='register-input-style' name='password' type='password' placeholder='Password' value={registerFormData.password} onChange={handleChange} />
           </div>
           <button className='register-submit-button'>Register</button>

@@ -1,0 +1,196 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  /* margin: 20px 10px; */
+  /* height: 133px; */
+  /* margin-top: 21px; */
+  /* margin-bottom: 21px; */
+  box-shadow: 0vw .3vw .66vw 0vw rgba(0, 0, 0, 0.3);
+}
+
+.link-profile {
+  text-decoration: none;
+  margin: 0px 15px;
+  align-items: center;
+}
+
+
+.top-logo {
+  height: 63px;
+  width: 63px;
+  margin-top:  18px;
+  margin-left: 54px;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0px 25px;
+  font-size: 18px;
+  color: black;
+}
+
+.dropdown {
+  margin: 0px 15px;
+  display: inline-block;
+  flex-direction: row;
+  color: black;
+}
+
+.profileimg {
+  display: flex;
+  flex-direction: row;
+  margin: 0 .5vw 0 0;
+  width: 12px;
+}
+
+
+.nav {
+  display: flex;
+  margin-right: 18px;
+  margin-bottom: 6px;
+  /* margin-top: 9px; */
+}
+
+
+/* .nav>a {
+  margin: 3% 5%;
+  text-decoration: none;
+} */
+
+
+.header-logo {
+  position: absolute;
+  width: 147px;
+  height: 67.21px;
+  left: 72px;
+  top: 26px;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.link-profile {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5% 0 0;
+  font-size: 18px;
+  color: black;
+}
+
+.user-name-nav {
+  font-size: 18px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  font-size: 18px;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  margin: 3% 5%;
+  display: flex;
+  flex-direction: row;
+  font-family: Poppins;
+  cursor: pointer;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.arrow {
+  width: 1vw;
+  padding: .5vw;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color: #3e8e41; */
+}
+
+@media only screen and (max-width: 850px) {
+  .header{
+    /* height: 27px; */
+    /* margin-top:11px; */
+    align-items: center;
+    /* margin-bottom: 14px; */
+    width: 100%;
+  }
+
+  .link {
+    font-size: 12px;
+    margin: 5px 8px;
+  }
+
+  .top-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 9px;
+  }
+
+  .nav {
+    margin-top: 9px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+  .arrow {
+    width: 6px;
+  }
+
+  .dropdown {
+    
+    margin: 5px 8px; 
+  }
+
+  .dropbtn {
+    font-size: 12px;
+  }
+
+  .link-profile {
+    margin: 5px 8px;  
+    font-size: 12px;
+  }
+
+  .user-name-nav {
+    font-size: 12px;
+    /* margin: 5px;   */
+  }
+  .profileimg {
+    width: 8px;
+  }
+}
