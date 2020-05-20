@@ -15,8 +15,8 @@ import {
 import Register from './components/Register'
 
 class Container extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       currentUser: null,
@@ -27,14 +27,13 @@ class Container extends Component {
       registerFormData: {
         first_name: '',
         last_name: '',
-        location: '',
         email: '',
-        phone: '',
+        password: '',
         department: '',
         title: '',
-        password: ''
+        location: '',
+        phone: '',
       },
-      first_name: '',
     }
   }
 
@@ -69,7 +68,23 @@ class Container extends Component {
 
   handleLogin = async (e) => {
     e.preventDefault();
-    const currentUser = await loginUser(this.state.registerFormData);
+    const currentUser = await loginUser(this.state.authFormData);
+    this.setState({
+      currentUser
+    })
+    this.props.history.push("/")
+  }
+
+  handleLogout = () => {
+    localStorage.removeItem("jwt");
+    this.setState({currentUser: null})
+    removeToken();
+    this.props.history.push("/login")
+  }
+
+  handleRegister = async (e) => {
+    e.preventDefault();
+    const currentUser = await registerUser(this.state.registerFormData);
     this.setState({
       currentUser
     })
@@ -97,27 +112,29 @@ class Container extends Component {
   }
 
   render() {
+    console.log(this.state.registerFormData)
+    console.log(this.state.currentUser)
     return (
       <div>
-        <Nav />
-        
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
               handleLogin={this.handleLogin}
-              handleChange={this.handleChane}
+              handleChange={this.handleChange}
               authFormData={this.state.authFormData}
               {...props}/>
           )} />
           <Route exact path="/register" render={(props) => (
             <Register
               handleRegister={this.handleRegister}
-              handleChange={this.authHandleChange}
-              registerFormData={this.state.authFormData}/>
+              handleChange={this.registerHandleChange}
+              registerFormData={this.state.registerFormData}
+             />
           )} />
           <Route exact path="/" render={(props) => (
             <Home
-              first_name={this.state.first_name}
+              handleLogout={this.handleLogout}
+              currentUser={this.state.currentUser}
             />
           )}/>
         </Switch>
