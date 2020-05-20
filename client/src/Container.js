@@ -3,8 +3,9 @@ import {withRouter} from 'react-router-dom'
 import {Route, Switch} from 'react-router-dom'
 import Home from './components/Home'
 import Nav from './components/Nav'
-
+import axios from 'axios'
 import Login from './components/Login'
+import {WEATHER_API_KEY} from './config'
 
 import {
   registerUser,
@@ -13,6 +14,7 @@ import {
   removeToken
 } from './services/api-helper'
 import Register from './components/Register'
+import Axios from 'axios'
 
 class Container extends Component {
   constructor(props) {
@@ -34,6 +36,8 @@ class Container extends Component {
         location: '',
         phone: '',
       },
+      weather: '',
+      search: ''
     }
   }
 
@@ -44,6 +48,7 @@ class Container extends Component {
         currentUser
       })
     }
+   
   }
 
 
@@ -111,16 +116,33 @@ class Container extends Component {
     }))
   }
 
+  handleChange = (e) => {
+    const value = e.target.value;
+    this.setState({
+      ...this.state,
+      [e.target.name]: value
+    })
+  }  
+
+  handleSubmit = (e) => {
+    const value = e.target.value;
+    this.setState({
+      ...this.state,
+      [e.target.name]: value
+    }) 
+  }
+
   render() {
     console.log(this.state.registerFormData)
     console.log(this.state.currentUser)
+    console.log(this.state.authFormData)
     return (
       <div>
         <Switch>
           <Route exact path="/login" render={(props) => (
             <Login
               handleLogin={this.handleLogin}
-              handleChange={this.handleChange}
+              handleChange={this.authHandleChange}
               authFormData={this.state.authFormData}
               {...props}/>
           )} />
@@ -135,6 +157,9 @@ class Container extends Component {
             <Home
               handleLogout={this.handleLogout}
               currentUser={this.state.currentUser}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              search={this.state.search}
             />
           )}/>
         </Switch>
