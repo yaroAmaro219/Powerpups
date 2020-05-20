@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import Search from './Search'
 
+
 export default class Home extends Component {
   render() {
     return (
+
           <div class="home">
             <div class="sidebar">
               <h1>Sidebar</h1>
@@ -22,6 +24,7 @@ export default class Home extends Component {
             </div>
         </div>
         </div>
+        
     )
   }
 }
