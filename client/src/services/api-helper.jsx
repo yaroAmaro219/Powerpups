@@ -1,10 +1,7 @@
 const axios = require('axios')
 
-const baseUrl = process.env.NODE_ENV ===
-  'production' ? 'https://' : 'http://localhost:3000'
-
 const api = axios.create({
-  baseUrl: baseUrl
+  baseURL: process.env.NODE_ENV === 'production' ? 'https://animal-rescue-001.herokuapp.com' : 'http://localhost:3000'
 });
 
 export const loginUser = async (loginData) => {
@@ -15,7 +12,7 @@ export const loginUser = async (loginData) => {
 }
 
 export const registerUser = async (registerData) => {
-  const resp = await api.post(`/users`, { user: registerData })
+  const resp = await api.post('/users', { user: registerData })
   localStorage.setItem('authToken', resp.data.token)
   api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
   return resp.data.user

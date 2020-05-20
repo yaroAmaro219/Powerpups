@@ -1,7 +1,18 @@
 div.app {
-  /* min-height: 100vh; */
+  min-height: 500px;
   /* text-align: center; */
   font-family: Poppins;
+  background-color: grey;
+  margin:0;
+  padding: 0;
+}
+
+.App {
+  background-color: rgb(179, 177, 177); 
+}
+
+body {
+  margin:0;
 }
 
 div.decision {
@@ -93,6 +104,8 @@ input[type=password] {
 html {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
