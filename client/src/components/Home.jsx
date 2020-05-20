@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 
+
 export default class Home extends Component {
   render() {
     return (
+
+      <div>
       <div class="home">
         <div class="sidebar">
           <img src={''} />
@@ -52,6 +55,7 @@ export default class Home extends Component {
             <h1>3 teams</h1>
           </div>
         </div>
+
       </div>
     )
   }
