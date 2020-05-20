@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import Search from './Search'
-import GeoLocation from './GeoLocation'
-import {WEATHER_API_KEY} from '../config'
 
 export default class Home extends Component {
   render() {
