@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import React, { Component } from 'react'
 import SearchBar from './SearchBar';
 
-=======
-import React, { Component } from "react";
-import Axios from "axios";
->>>>>>> master
 
 export default class Home extends Component {
   constructor(props) {
@@ -53,11 +48,7 @@ export default class Home extends Component {
   };
 
   render() {
-<<<<<<< HEAD
     const { userInput, listOfUsers, onSearchChange } = this.props;
-=======
-    console.log(this.state.name);
->>>>>>> master
     return (
       <div class="home">
         <div class="sidebar">
@@ -89,7 +80,6 @@ export default class Home extends Component {
           </div>
         </div>
         <div class="main-container">
-<<<<<<< HEAD
         <form
       onSubmit={
         e => this.props.handleSubmit(e)
@@ -109,19 +99,6 @@ export default class Home extends Component {
         onSearchChange={onSearchChange}
       />
     </form>
-=======
-          <form onSubmit={(e) => this.props.handleSubmit(e)}>
-            <input
-              class="search"
-              value={this.props.search}
-              onChange={(e) => this.props.handleChange(e)}
-              name="search"
-              type="text"
-              placeholder="Search Datadog employees"
-            />
-            <button type="submit">Search</button>
-          </form>
->>>>>>> master
           <div class="main">
             <h1>
               Hello{" "}
@@ -161,11 +138,7 @@ export default class Home extends Component {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       </div>
     )
-=======
-    );
->>>>>>> master
   }
 }
