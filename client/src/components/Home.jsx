@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import ToggleCaret from './ToggleCaret'
 
 
 export default class Home extends Component {
   render() {
     return (
-
-      <div>
       <div class="home">
         <div class="sidebar">
           <img src={''} />
@@ -53,6 +52,7 @@ export default class Home extends Component {
           </div>
           <div class="groups">
             <h1>3 teams</h1>
+            <ToggleCaret />
           </div>
         </div>
 
