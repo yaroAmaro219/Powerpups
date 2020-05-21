@@ -12,7 +12,9 @@ import {
   verifyUser,
   removeToken,
   postTeam,
-  showTeam
+  showTeam,
+  destroyTeam,
+  putUser
 } from './services/api-helper'
 import Register from './components/Register'
 import Axios from 'axios'
@@ -36,6 +38,7 @@ class Container extends Component {
         title: '',
         location: '',
         phone: '',
+        image: null,
       },
       weather: '',
       search: '',
@@ -66,6 +69,16 @@ class Container extends Component {
     this.setState({teams})
   }
 
+  deleteTeam = async (id) => {
+    const team = await destroyTeam();
+  }
+
+  updateUser = async (e) => {
+    e.preventDefault();
+    const editUser = await putUser(e);
+  
+  }
+
   //================== AUTH ===================
 
   handleChange = (e) => { 
@@ -94,7 +107,8 @@ class Container extends Component {
     this.props.history.push("/")
   }
 
-  handleLogout = () => {
+  handleLogout = async(id, params) => {
+    const status = await putUser(id, params)
     localStorage.removeItem("jwt");
     this.setState({currentUser: null})
     removeToken();
@@ -174,10 +188,11 @@ class Container extends Component {
               search={this.state.search}
               addTeam={this.addTeam}
               teams={this.state.teams}
+              deleteTeam={this.deleteTeam}
+              updateUser={this.updateUser}
             />
           )}/>
         </Switch>
-
       </div>
     )
   }

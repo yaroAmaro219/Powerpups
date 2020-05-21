@@ -40,8 +40,23 @@ export const postTeam = async (name) => {
   return resp.data;
 };
 
+export const putSquad = async (squad_id,params) => {
+  const resp = await api.put(`/sqauds/${squad_id}`, {squad: params})
+  return resp.data
+}
+
 export const showTeam = async () => {
   const resp = await api.get(`/squads`)
+  return resp.data
+}
+
+export const destroyTeam = async (id) => {
+  const resp = await api.delete(`/squads/${id}`)
+  return resp.data
+}
+
+export const putUser = async (id, params) => {
+  const resp = await api.put(`/users/${id}`, { user: params })
   return resp.data
 }
 

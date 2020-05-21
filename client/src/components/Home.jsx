@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Axios from "axios";
 
 export default class Home extends Component {
   constructor(props) {
@@ -11,6 +12,20 @@ export default class Home extends Component {
       },
       weather: "",
     };
+  }
+
+  componentDidMount = async () => {
+    const weather = await this.getWeather()
+  }
+
+  getWeather = async () => {
+    const { currentUser } = this.props
+    const city =
+      currentUser
+      &&
+      currentUser.location
+    const weather = await Axios.get(`https://www.wunderground.com/weather/gb/${this.state.city}/`)
+    this.setState({weather})
   }
 
   handleChange = (e) => {
@@ -48,7 +63,14 @@ export default class Home extends Component {
           {this.props.teams
             &&
             this.props.teams.map((name) => 
-              <p>{name.name}</p>)}
+              <form>
+                
+                <p>{name.name}
+                </p>
+
+                <button onClick={(e) => ('') }>Delete Squad</button>
+              </form>)}
+          
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout
@@ -73,7 +95,13 @@ export default class Home extends Component {
               Hello{" "}
               {this.props.currentUser && this.props.currentUser.first_name}
             </h1>
-            <p>It is currently in Sydney, Australia</p>
+            <p>It is currently in
+             
+              {
+
+              }
+             
+              Sydney, Australia</p>
           </div>
           <div class="notifications">
             <h1>Here are your latest updates:</h1>
