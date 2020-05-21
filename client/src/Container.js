@@ -219,7 +219,6 @@ class Container extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
-              // ===============Ted's code=================
               userInput={this.state.userInput}
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
