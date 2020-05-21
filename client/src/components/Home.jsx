@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import Axios from "axios";
+import React, { Component } from 'react'
+import SearchBar from './SearchBar';
+
 
 export default class Home extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class Home extends Component {
   };
 
   render() {
-    console.log(this.state.name);
+    const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
       <div class="home">
         <div class="sidebar">
@@ -79,17 +80,25 @@ export default class Home extends Component {
           </div>
         </div>
         <div class="main-container">
-          <form onSubmit={(e) => this.props.handleSubmit(e)}>
-            <input
-              class="search"
-              value={this.props.search}
-              onChange={(e) => this.props.handleChange(e)}
-              name="search"
-              type="text"
-              placeholder="Search Datadog employees"
-            />
-            <button type="submit">Search</button>
-          </form>
+        <form
+      onSubmit={
+        e => this.props.handleSubmit(e)
+      }>
+      {/* <input
+        class="search"
+        value={this.props.search}
+        onChange={e => this.props.handleChange(e)}
+        name='search'
+        type="text"
+        placeholder='Search Datadog employees'
+      />
+      <button type="submit">Search</button> */}
+      <SearchBar 
+        userInput={userInput}
+        listOfUsers={listOfUsers}
+        onSearchChange={onSearchChange}
+      />
+    </form>
           <div class="main">
             <h1>
               Hello{" "}
@@ -129,6 +138,7 @@ export default class Home extends Component {
           </div>
         </div>
       </div>
-    );
+      </div>
+    )
   }
 }

@@ -1,3 +1,59 @@
+<<<<<<< HEAD
+Started POST "/users" for ::1 at 2020-05-20 16:32:02 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-05-20 16:32:03 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+=======
 Started GET "/auth/verify" for ::1 at 2020-05-20 20:06:30 -0400
   [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by AuthenticationController#verify as HTML
@@ -77,6 +133,7 @@ activerecord (6.0.3) lib/active_record/connection_adapters/abstract/connection_p
 activerecord (6.0.3) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
 activerecord (6.0.3) lib/active_record/connection_handling.rb:189:in `connection'
 activerecord (6.0.3) lib/active_record/migration.rb:562:in `call'
+>>>>>>> master
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
 activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
@@ -105,6 +162,21 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
+Started POST "/users" for ::1 at 2020-05-20 16:32:09 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+=======
 Started POST "/auth/login" for ::1 at 2020-05-20 20:09:25 -0400
   
 PG::ConnectionBad (could not connect to server: No such file or directory
@@ -126,6 +198,7 @@ activerecord (6.0.3) lib/active_record/connection_adapters/abstract/connection_p
 activerecord (6.0.3) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
 activerecord (6.0.3) lib/active_record/connection_handling.rb:189:in `connection'
 activerecord (6.0.3) lib/active_record/migration.rb:562:in `call'
+>>>>>>> master
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
 activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
@@ -154,6 +227,21 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
+Started POST "/users" for ::1 at 2020-05-20 16:32:13 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+=======
 Started POST "/users" for ::1 at 2020-05-20 20:09:39 -0400
   
 PG::ConnectionBad (could not connect to server: No such file or directory
@@ -175,6 +263,7 @@ activerecord (6.0.3) lib/active_record/connection_adapters/abstract/connection_p
 activerecord (6.0.3) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
 activerecord (6.0.3) lib/active_record/connection_handling.rb:189:in `connection'
 activerecord (6.0.3) lib/active_record/migration.rb:562:in `call'
+>>>>>>> master
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
 activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
 actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
@@ -203,6 +292,2160 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+<<<<<<< HEAD
+Started POST "/users" for ::1 at 2020-05-20 16:32:20 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-05-20 16:32:28 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE DATABASE "Powerpups_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE "Powerpups_test" ENCODING = 'unicode'[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovePhoneFromUsers (20200520132655)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.5ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "phone"[0m
+  [1m[36mprimary::SchemaMigration Create (9.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200520132655"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPhoneToUsers (20200520133507)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (26.7ms)[0m  [1m[35mALTER TABLE "users" ADD "phone" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200520133507"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users" for ::1 at 2020-05-20 16:32:58 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"ted", "last_name"=>"schwartz", "email"=>"ted@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"software developer", "location"=>"new york", "phone"=>"999-999-9999"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (8.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "ted@fakemail.com"], ["password_digest", "$2a$12$CE/6zuFU0.fam8ijKbnSguRI6LKH.VDA9yB.oUrYerUsvkHzKO3o6"], ["created_at", "2020-05-20 20:32:59.082422"], ["updated_at", "2020-05-20 20:32:59.082422"], ["first_name", "ted"], ["last_name", "schwartz"], ["location", "new york"], ["department", "engineering"], ["title", "software developer"], ["phone", "999-999-9999"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 255ms (Views: 1.0ms | ActiveRecord: 17.6ms | Allocations: 11357)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 09:56:36 -0400
+  [1m[35m (52.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (66.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 494ms (Views: 2.9ms | ActiveRecord: 380.0ms | Allocations: 10014)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 09:56:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (21.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 39ms (Views: 5.4ms | ActiveRecord: 21.5ms | Allocations: 990)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 09:56:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 19ms (Views: 3.4ms | ActiveRecord: 0.9ms | Allocations: 990)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:17:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (75.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 395ms (Views: 22.0ms | ActiveRecord: 80.7ms | Allocations: 1075)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:17:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 48ms (Views: 15.1ms | ActiveRecord: 5.7ms | Allocations: 990)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:22:07 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (385.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 559ms (Views: 17.9ms | ActiveRecord: 385.0ms | Allocations: 973)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:22:16 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (29.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 72ms (Views: 10.2ms | ActiveRecord: 29.2ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:23:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (74.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 113ms (Views: 8.9ms | ActiveRecord: 74.9ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:24:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (215.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 263ms (Views: 10.0ms | ActiveRecord: 215.9ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:24:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (749.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 791ms (Views: 12.9ms | ActiveRecord: 749.5ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:25:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (72.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 101ms (Views: 4.5ms | ActiveRecord: 72.5ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:25:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (71.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 101ms (Views: 4.1ms | ActiveRecord: 71.3ms | Allocations: 973)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:25:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (37.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 56ms (Views: 4.3ms | ActiveRecord: 37.2ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:25:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 30ms (Views: 2.0ms | ActiveRecord: 14.8ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:25:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (65.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 77ms (Views: 2.8ms | ActiveRecord: 65.2ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:31:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (118.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 270ms (Views: 15.7ms | ActiveRecord: 118.3ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:35:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (39.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 131ms (Views: 22.4ms | ActiveRecord: 39.9ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:36:32 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (869.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 1114ms (Views: 34.7ms | ActiveRecord: 869.1ms | Allocations: 976)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:36:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 59ms (Views: 3.7ms | ActiveRecord: 13.5ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:37:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (391.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 545ms (Views: 35.0ms | ActiveRecord: 391.4ms | Allocations: 972)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:38:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (176.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 268ms (Views: 10.4ms | ActiveRecord: 176.8ms | Allocations: 973)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:56:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 154ms (Views: 25.7ms | ActiveRecord: 14.8ms | Allocations: 1061)
+
+
+Started GET "/users" for ::1 at 2020-05-21 10:56:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 62ms (Views: 55.4ms | ActiveRecord: 0.4ms | Allocations: 1124)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 10:58:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (131.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 175ms (Views: 8.6ms | ActiveRecord: 131.1ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 10:58:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (24.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 46ms (Views: 19.5ms | ActiveRecord: 24.2ms | Allocations: 1072)
+
+
+Started POST "/users" for ::1 at 2020-05-21 11:00:59 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Louis", "last_name"=>"Armistead", "email"=>"lou@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"CFO", "location"=>"New York", "phone"=>"0000000000"}}
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (45.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "lou@fakemail.com"], ["password_digest", "$2a$12$ZzIiUpPeWAypE1dFjQYraOsn/GRTNKmRlmgoFBqJ5jhbJ8V8PhwIW"], ["created_at", "2020-05-21 15:01:00.105860"], ["updated_at", "2020-05-21 15:01:00.105860"], ["first_name", "Louis"], ["last_name", "Armistead"], ["location", "New York"], ["department", "engineering"], ["title", "CFO"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 532ms (Views: 41.0ms | ActiveRecord: 57.5ms | Allocations: 3362)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:01:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (46.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 147ms (Views: 12.5ms | ActiveRecord: 46.7ms | Allocations: 975)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:01:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 13.6ms | ActiveRecord: 6.8ms | Allocations: 1278)
+
+
+Started POST "/users" for ::1 at 2020-05-21 11:02:35 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Carrie", "last_name"=>"Lipper", "email"=>"carrie@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"COO", "location"=>"London", "phone"=>"0000000000"}}
+  [1m[35m (4.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (16.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "carrie@fakemail.com"], ["password_digest", "$2a$12$8Ff8vlEd7OC44fyf37BSserU4llquDvvZOkAVRyDckDCaOgFOv1Wq"], ["created_at", "2020-05-21 15:02:36.156648"], ["updated_at", "2020-05-21 15:02:36.156648"], ["first_name", "Carrie"], ["last_name", "Lipper"], ["location", "London"], ["department", "engineering"], ["title", "COO"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 301ms (Views: 7.1ms | ActiveRecord: 25.1ms | Allocations: 3029)
+
+
+Started POST "/auth/login" for ::1 at 2020-05-21 11:03:15 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"ted@fakemail.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"ted@fakemail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (22.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ted@fakemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 378ms (Views: 1.1ms | ActiveRecord: 22.5ms | Allocations: 1286)
+
+
+Started POST "/users" for ::1 at 2020-05-21 11:03:31 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Carrie", "last_name"=>"Lipper", "email"=>"carrie@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"COO", "location"=>"London", "phone"=>"0000000000"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "carrie@fakemail.com"], ["password_digest", "$2a$12$ecvJnWW6OW9qfDusgk7JNuSJLW9L.IKmsKIoCVTjds2Tpzkq0jIT2"], ["created_at", "2020-05-21 15:03:31.616437"], ["updated_at", "2020-05-21 15:03:31.616437"], ["first_name", "Carrie"], ["last_name", "Lipper"], ["location", "London"], ["department", "engineering"], ["title", "COO"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 232ms (Views: 2.4ms | ActiveRecord: 4.3ms | Allocations: 3028)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:03:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 21ms (Views: 5.3ms | ActiveRecord: 1.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:03:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (56.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 87ms (Views: 28.7ms | ActiveRecord: 56.0ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:05:04 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (139.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 200ms (Views: 7.8ms | ActiveRecord: 139.5ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:05:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.5ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:05:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (95.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 125ms (Views: 7.5ms | ActiveRecord: 95.9ms | Allocations: 973)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:05:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (67.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 90ms (Views: 22.2ms | ActiveRecord: 67.1ms | Allocations: 1690)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:05:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 42ms (Views: 7.2ms | ActiveRecord: 15.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:05:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2344ms (Views: 2337.6ms | ActiveRecord: 5.0ms | Allocations: 1696)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:05:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 31ms (Views: 1.4ms | ActiveRecord: 23.8ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:05:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (28.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 38ms (Views: 9.3ms | ActiveRecord: 28.7ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:05:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (63.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 84ms (Views: 4.3ms | ActiveRecord: 63.8ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:05:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 8.5ms | ActiveRecord: 7.1ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:06:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 35ms (Views: 2.1ms | ActiveRecord: 25.0ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:06:03 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 3.5ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:06:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 6.0ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:06:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:12:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 65ms (Views: 6.1ms | ActiveRecord: 8.2ms | Allocations: 1062)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:12:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 3.8ms | Allocations: 1691)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:15:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (449.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 753ms (Views: 37.0ms | ActiveRecord: 449.7ms | Allocations: 973)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:15:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (147.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 205ms (Views: 57.7ms | ActiveRecord: 147.1ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:16:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (890.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 975ms (Views: 19.1ms | ActiveRecord: 890.8ms | Allocations: 974)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:16:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (130.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 186ms (Views: 53.0ms | ActiveRecord: 130.4ms | Allocations: 1692)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:22:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (323.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 445ms (Views: 27.9ms | ActiveRecord: 323.9ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:22:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:22:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (198.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 320ms (Views: 29.3ms | ActiveRecord: 198.9ms | Allocations: 976)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:22:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (43.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 156ms (Views: 106.2ms | ActiveRecord: 43.3ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:22:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (151.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 199ms (Views: 3.8ms | ActiveRecord: 151.1ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:22:32 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 1.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:22:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 85ms (Views: 13.8ms | ActiveRecord: 1.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:22:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.5ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:29:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (60.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 312ms (Views: 47.8ms | ActiveRecord: 82.9ms | Allocations: 1060)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:29:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.3ms | Allocations: 1691)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:30:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 58ms (Views: 6.8ms | ActiveRecord: 9.4ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:30:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 54ms (Views: 26.6ms | ActiveRecord: 23.9ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:31:44 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (58.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 88ms (Views: 5.1ms | ActiveRecord: 58.2ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:31:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (26.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 56ms (Views: 27.4ms | ActiveRecord: 26.2ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:33:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (110.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 182ms (Views: 10.4ms | ActiveRecord: 110.5ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (33.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 65ms (Views: 29.3ms | ActiveRecord: 33.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:33:07 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (63.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 76ms (Views: 3.5ms | ActiveRecord: 63.9ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:07 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 15.2ms | ActiveRecord: 15.7ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:33:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (109.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 160ms (Views: 10.0ms | ActiveRecord: 109.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (24.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 43ms (Views: 16.1ms | ActiveRecord: 24.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (50.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 88ms (Views: 33.8ms | ActiveRecord: 50.9ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (45.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 1747ms (Views: 1699.2ms | ActiveRecord: 45.5ms | Allocations: 1696)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:33:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (27.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 4.6ms | ActiveRecord: 27.3ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (22.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 105ms (Views: 37.9ms | ActiveRecord: 22.0ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.5ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:20 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (21.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 38ms (Views: 4.5ms | ActiveRecord: 21.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 9.0ms | ActiveRecord: 3.7ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 44ms (Views: 16.0ms | ActiveRecord: 0.8ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:31 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 52ms (Views: 21.1ms | ActiveRecord: 27.1ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 35ms (Views: 6.2ms | ActiveRecord: 11.9ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 26ms (Views: 9.2ms | ActiveRecord: 16.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 16ms (Views: 4.4ms | ActiveRecord: 0.9ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 10.8ms | ActiveRecord: 23.8ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:34:50 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:34:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 8.8ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (25.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 59ms (Views: 10.8ms | ActiveRecord: 25.4ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 28ms (Views: 5.9ms | ActiveRecord: 21.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 10ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:22 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (92.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 100ms (Views: 6.6ms | ActiveRecord: 92.5ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 23ms (Views: 6.7ms | ActiveRecord: 5.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 28ms (Views: 12.3ms | ActiveRecord: 15.6ms | Allocations: 1692)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 3.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (29.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 43ms (Views: 11.6ms | ActiveRecord: 29.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (37.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 45ms (Views: 1.1ms | ActiveRecord: 37.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 23.7ms | ActiveRecord: 10.8ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:35:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (43.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 53ms (Views: 4.0ms | ActiveRecord: 43.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:35:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (31.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 41ms (Views: 8.9ms | ActiveRecord: 31.7ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:36:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (20.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 63ms (Views: 16.8ms | ActiveRecord: 20.4ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:36:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (17.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 9.4ms | ActiveRecord: 17.8ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:36:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (36.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 74ms (Views: 7.6ms | ActiveRecord: 36.8ms | Allocations: 973)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:36:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 34ms (Views: 16.3ms | ActiveRecord: 16.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:36:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 3.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:36:54 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 5.4ms | ActiveRecord: 21.7ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:36:58 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 33ms (Views: 3.2ms | ActiveRecord: 24.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:36:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.9ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:38:54 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (22.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 45ms (Views: 4.5ms | ActiveRecord: 22.2ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:38:54 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (55.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 80ms (Views: 23.7ms | ActiveRecord: 55.6ms | Allocations: 1690)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:41:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (36.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 77ms (Views: 10.5ms | ActiveRecord: 36.4ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:41:03 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (20.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 662ms (Views: 640.5ms | ActiveRecord: 20.4ms | Allocations: 1692)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:42:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 41ms (Views: 28.0ms | ActiveRecord: 7.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:42:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (70.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 89ms (Views: 15.4ms | ActiveRecord: 70.6ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:43:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 1.5ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:43:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 9.3ms | ActiveRecord: 12.8ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:43:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (45.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 58ms (Views: 12.0ms | ActiveRecord: 45.2ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:46:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (112.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 252ms (Views: 25.4ms | ActiveRecord: 112.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:46:22 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 4.2ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:49:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (38.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 229ms (Views: 159.7ms | ActiveRecord: 38.5ms | Allocations: 1690)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:49:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (43.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 136ms (Views: 91.4ms | ActiveRecord: 43.2ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:49:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (77.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 128ms (Views: 45.1ms | ActiveRecord: 77.5ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:49:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (47.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 66ms (Views: 17.8ms | ActiveRecord: 47.0ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:50:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 38ms (Views: 27.3ms | ActiveRecord: 7.0ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:50:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:50:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (13.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 77ms (Views: 60.4ms | ActiveRecord: 13.0ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (71.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 91ms (Views: 18.1ms | ActiveRecord: 71.6ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 25.2ms | ActiveRecord: 8.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.9ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:32 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 25ms (Views: 15.8ms | ActiveRecord: 7.9ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 6.6ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 33ms (Views: 15.6ms | ActiveRecord: 17.7ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:51:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 37ms (Views: 13.5ms | ActiveRecord: 23.2ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:52:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 39ms (Views: 15.1ms | ActiveRecord: 23.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:52:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:52:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 11:55:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (84.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 210ms (Views: 9.9ms | ActiveRecord: 84.6ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 11:55:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:00:04 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (227.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 414ms (Views: 36.3ms | ActiveRecord: 227.0ms | Allocations: 976)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:00:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (222.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 305ms (Views: 77.0ms | ActiveRecord: 222.5ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:00:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 41.1ms | ActiveRecord: 21.3ms | Allocations: 1690)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:00:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:01:05 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (138.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 276ms (Views: 23.8ms | ActiveRecord: 138.5ms | Allocations: 974)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:01:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (106.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 168ms (Views: 52.3ms | ActiveRecord: 106.3ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:01:22 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (41.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 85ms (Views: 10.6ms | ActiveRecord: 41.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:01:22 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (357.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 423ms (Views: 64.2ms | ActiveRecord: 357.0ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:01:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 15ms (Views: 2.3ms | ActiveRecord: 5.5ms | Allocations: 973)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:01:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (26.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 5.1ms | ActiveRecord: 26.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:01:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (226.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 254ms (Views: 5.4ms | ActiveRecord: 226.0ms | Allocations: 973)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:01:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (51.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 67ms (Views: 14.6ms | ActiveRecord: 51.8ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:02:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (25.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 48ms (Views: 4.8ms | ActiveRecord: 25.0ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (39.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 49ms (Views: 9.0ms | ActiveRecord: 39.5ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 9.5ms | ActiveRecord: 25.5ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (826.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 950ms (Views: 108.0ms | ActiveRecord: 826.2ms | Allocations: 1690)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 5.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (44.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 65ms (Views: 17.8ms | ActiveRecord: 44.2ms | Allocations: 1692)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:02:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:04:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 2.0ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:04:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:04:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 5.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:04:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:05:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (70.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 124ms (Views: 47.8ms | ActiveRecord: 70.4ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:05:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:05:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 53ms (Views: 31.6ms | ActiveRecord: 21.2ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:05:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 52ms (Views: 26.1ms | ActiveRecord: 23.7ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (24.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 37.3ms | ActiveRecord: 24.8ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 12.9ms | ActiveRecord: 6.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 4.9ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:06:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (68.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 77ms (Views: 8.6ms | ActiveRecord: 68.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (27.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 39ms (Views: 10.7ms | ActiveRecord: 27.8ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 18.5ms | ActiveRecord: 5.0ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:07 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 10.5ms | ActiveRecord: 7.2ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:07:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (96.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 159ms (Views: 4.8ms | ActiveRecord: 96.1ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 12.8ms | ActiveRecord: 21.7ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:07:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (15.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 28ms (Views: 1.8ms | ActiveRecord: 15.2ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 42ms (Views: 20.6ms | ActiveRecord: 21.3ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:07:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 1692)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:08:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 7.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:08:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 38ms (Views: 8.0ms | ActiveRecord: 10.6ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:08:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 45ms (Views: 17.5ms | ActiveRecord: 25.1ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:09:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 9.1ms | ActiveRecord: 7.8ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:09:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 8.6ms | ActiveRecord: 5.6ms | Allocations: 1689)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:09:32 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 25ms (Views: 1.8ms | ActiveRecord: 17.7ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:09:32 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (84.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 92ms (Views: 6.7ms | ActiveRecord: 84.7ms | Allocations: 1689)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:09:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 1.6ms | Allocations: 1689)
+
+
+Started POST "/users" for ::1 at 2020-05-21 12:11:04 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Artemie", "last_name"=>"Amari", "email"=>"artemie@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"Software Developer", "location"=>"San Francisco", "phone"=>"0000000000"}}
+  [1m[35m (9.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (81.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "artemie@fakemail.com"], ["password_digest", "$2a$12$MZpEBER.Bavvkwapy9VoZ.97W7I5I7umRCO8Aco9TM8SaDjL5Kya6"], ["created_at", "2020-05-21 16:11:05.188462"], ["updated_at", "2020-05-21 16:11:05.188462"], ["first_name", "Artemie"], ["last_name", "Amari"], ["location", "San Francisco"], ["department", "engineering"], ["title", "Software Developer"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 491ms (Views: 15.7ms | ActiveRecord: 97.1ms | Allocations: 3028)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:11:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (18.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 74ms (Views: 11.6ms | ActiveRecord: 18.3ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:11:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (51.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 82ms (Views: 25.5ms | ActiveRecord: 51.4ms | Allocations: 1895)
+
+
+Started POST "/users" for ::1 at 2020-05-21 12:12:32 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Jowel", "last_name"=>"Rosario", "email"=>"jowel@fakemail.com", "password"=>"[FILTERED]", "department"=>"engineering", "title"=>"software developer", "location"=>"New York", "phone"=>"0000000000"}}
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (71.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "jowel@fakemail.com"], ["password_digest", "$2a$12$unOnWURtYrrjRuOfDGOWYeJLOZioYFYNnoM.COiLjm87wrHjeyh0i"], ["created_at", "2020-05-21 16:12:33.185841"], ["updated_at", "2020-05-21 16:12:33.185841"], ["first_name", "Jowel"], ["last_name", "Rosario"], ["location", "New York"], ["department", "engineering"], ["title", "software developer"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (53.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 449ms (Views: 4.6ms | ActiveRecord: 127.5ms | Allocations: 3026)
+
+
+Started POST "/users" for ::1 at 2020-05-21 12:13:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Joanna", "last_name"=>"Choi", "email"=>"joanna@fakemail.com", "password"=>"[FILTERED]", "department"=>"Design", "title"=>"UX Designer", "location"=>"New York", "phone"=>"0000000000"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (11.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "joanna@fakemail.com"], ["password_digest", "$2a$12$.jZHRiQULleNjhi9pIiO6.CBRGaOmsl6BSDqsLmygB/G.ltrp9SAG"], ["created_at", "2020-05-21 16:13:28.781945"], ["updated_at", "2020-05-21 16:13:28.781945"], ["first_name", "Joanna"], ["last_name", "Choi"], ["location", "New York"], ["department", "Design"], ["title", "UX Designer"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 289ms (Views: 5.5ms | ActiveRecord: 15.9ms | Allocations: 3029)
+
+
+Started POST "/users" for ::1 at 2020-05-21 12:14:22 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Hanna", "last_name"=>"Chumakova", "email"=>"hanna@fakemail.com", "password"=>"[FILTERED]", "department"=>"Design", "title"=>"UX Designer", "location"=>"New York", "phone"=>"0000000000"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at", "first_name", "last_name", "location", "department", "title", "phone") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "hanna@fakemail.com"], ["password_digest", "$2a$12$ddi5R/vGlaCjivUQFy7S9OJyG22v/GAmUw7Gb9gLsKRDJyaFUvCQC"], ["created_at", "2020-05-21 16:14:22.406117"], ["updated_at", "2020-05-21 16:14:22.406117"], ["first_name", "Hanna"], ["last_name", "Chumakova"], ["location", "New York"], ["department", "Design"], ["title", "UX Designer"], ["phone", "0000000000"]]
+  ↳ app/controllers/users_controller.rb:27:in `create'
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:27:in `create'
+Completed 201 Created in 273ms (Views: 6.3ms | ActiveRecord: 9.6ms | Allocations: 3029)
+
+
+Started POST "/auth/login" for ::1 at 2020-05-21 12:14:35 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"ted@fakemail.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"ted@fakemail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (14.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ted@fakemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 281ms (Views: 2.9ms | ActiveRecord: 14.0ms | Allocations: 1119)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 1.9ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 15.5ms | ActiveRecord: 6.7ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 1.0ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (12.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 16.1ms | ActiveRecord: 12.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 5.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 8.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (43.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 50ms (Views: 5.5ms | ActiveRecord: 43.3ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:14:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 12.1ms | ActiveRecord: 21.8ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 2.9ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 1.8ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 210ms (Views: 195.9ms | ActiveRecord: 13.3ms | Allocations: 2516)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:14:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:15:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:15:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:17:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (116.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 159ms (Views: 6.8ms | ActiveRecord: 116.6ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:17:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 9.9ms | ActiveRecord: 24.7ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:17:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 65ms (Views: 4.6ms | ActiveRecord: 22.3ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:17:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 3.2ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:18:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (68.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 143ms (Views: 27.8ms | ActiveRecord: 68.0ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:18:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (53.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 91ms (Views: 34.5ms | ActiveRecord: 53.8ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 107ms (Views: 70.2ms | ActiveRecord: 26.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 1.1ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 53ms (Views: 25.3ms | ActiveRecord: 25.1ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:20:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 1.0ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:21:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (84.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 220ms (Views: 18.3ms | ActiveRecord: 84.1ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:21:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (95.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 181ms (Views: 82.7ms | ActiveRecord: 95.0ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:22:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (32.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 90ms (Views: 8.6ms | ActiveRecord: 32.5ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:22:55 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (16.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 18.0ms | ActiveRecord: 16.2ms | Allocations: 2514)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:24:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 59ms (Views: 11.2ms | ActiveRecord: 20.5ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:24:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 24.5ms | ActiveRecord: 9.6ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:24:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (12.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 43ms (Views: 8.8ms | ActiveRecord: 12.4ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:24:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 41ms (Views: 28.6ms | ActiveRecord: 11.9ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:26:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (93.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 146ms (Views: 10.0ms | ActiveRecord: 93.6ms | Allocations: 972)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:26:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (54.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 129ms (Views: 73.7ms | ActiveRecord: 54.4ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:28:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (50.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 78ms (Views: 4.9ms | ActiveRecord: 50.5ms | Allocations: 969)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:28:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (177.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 226ms (Views: 42.7ms | ActiveRecord: 177.8ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:29:51 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 22ms (Views: 4.7ms | ActiveRecord: 5.5ms | Allocations: 970)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:29:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (66.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 92ms (Views: 24.4ms | ActiveRecord: 66.9ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:32:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (377.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 629ms (Views: 36.3ms | ActiveRecord: 377.0ms | Allocations: 970)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (270.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 379ms (Views: 108.0ms | ActiveRecord: 270.7ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (29.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 68ms (Views: 37.6ms | ActiveRecord: 29.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 69ms (Views: 47.8ms | ActiveRecord: 21.4ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:33:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (3016.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3113ms (Views: 19.1ms | ActiveRecord: 3016.7ms | Allocations: 976)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:27 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (979.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 1106ms (Views: 125.7ms | ActiveRecord: 979.1ms | Allocations: 2514)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (64.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 117ms (Views: 52.1ms | ActiveRecord: 64.6ms | Allocations: 2514)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (63.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 75ms (Views: 11.2ms | ActiveRecord: 63.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:33:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 61ms (Views: 35.2ms | ActiveRecord: 23.8ms | Allocations: 2513)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 12:40:55 -0400
+Processing by AuthenticationController#verify as HTML
+Started GET "/users" for ::1 at 2020-05-21 12:41:01 -0400
+  [1m[36mUser Load (167.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 519ms (Views: 10.0ms | ActiveRecord: 170.4ms | Allocations: 1622)
+
+
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (31.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 135ms (Views: 100.1ms | ActiveRecord: 31.7ms | Allocations: 2571)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.9ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 54ms (Views: 42.8ms | ActiveRecord: 1.2ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 1.1ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 52ms (Views: 46.6ms | ActiveRecord: 4.9ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 1.3ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.7ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 0.7ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 1.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 534ms (Views: 530.9ms | ActiveRecord: 1.4ms | Allocations: 2516)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 2.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 1.9ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (61.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 129ms (Views: 63.9ms | ActiveRecord: 61.1ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 2.6ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 23ms (Views: 19.3ms | ActiveRecord: 0.4ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:41:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 3.2ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:42:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 40ms (Views: 20.3ms | ActiveRecord: 15.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:42:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:43:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.8ms | Allocations: 2513)
+
+
+Started GET "/users" for ::1 at 2020-05-21 12:43:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 6.2ms | ActiveRecord: 8.3ms | Allocations: 2513)
+
+
+=======
   [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE "Powerpups_development" ENCODING = 'unicode'[0m
   [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "Powerpups_test" ENCODING = 'unicode'[0m
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -2406,3 +4649,4 @@ app/controllers/squads_controller.rb:9:in `index'
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+>>>>>>> master
