@@ -15,10 +15,12 @@
 
 .home {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
-  width: 900px;
+  width: 104%;
   background: linear-gradient(rgb(89, 89, 252), #6D73BB);
   height: 160px;
   margin: 27px 18px;
@@ -33,7 +35,7 @@
   margin: 18px;
   padding-left: 18px;
   padding-top: 3px;
-  width: 900px;
+  width: 104%;
 }
 
 .groups {
@@ -42,7 +44,7 @@
   margin: 36px 18px;
   padding-left: 18px;
   padding-top: 3px;
-  width: 900px;
+  width: 104%;
 }
 
 .main-container {
