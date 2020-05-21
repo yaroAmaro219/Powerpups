@@ -60,7 +60,7 @@ class Container extends Component {
         currentUser,
       });
     }
-
+    this.getTeam();
     const userResponse = await axios.get(`http://localhost:3000/users`);
     const listOfUsers = userResponse.data;
     console.log(listOfUsers)
@@ -190,9 +190,7 @@ class Container extends Component {
   }
 
   render() {
-    // console.log(this.state.registerFormData)
-    // console.log(this.state.currentUser)
-    // console.log(this.state.authFormData)
+    console.log(this.state.teams)
     return (
       <div>
         <Switch>
@@ -222,6 +220,8 @@ class Container extends Component {
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
               onSearchChange={this.onSearchChange}
+              teams={this.state.teams}
+              addTeam={this.addTeam}
             />
           )}/>
           {/* <Route exact path="/search-bar" render={(props) => (

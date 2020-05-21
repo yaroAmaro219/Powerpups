@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import ToggleCaret from './ToggleCaret'
-
-
+import React, { Component } from "react";
+import ToggleCaret from "./ToggleCaret";
+import SearchBar from "./SearchBar";
+import axios from "axios";
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -9,25 +9,24 @@ export default class Home extends Component {
     this.state = {
       name: {
         teamName: "",
-        user_id: ''
+        user_id: "",
       },
       weather: "",
     };
   }
 
   componentDidMount = async () => {
-    const weather = await this.getWeather()
-  }
+    const weather = await this.getWeather();
+  };
 
   getWeather = async () => {
-    const { currentUser } = this.props
-    const city =
-      currentUser
-      &&
-      currentUser.location
-    const weather = await Axios.get(`https://www.wunderground.com/weather/gb/${this.state.city}/`)
-    this.setState({weather})
-  }
+    const { currentUser } = this.props;
+    const city = currentUser && currentUser.location;
+    const weather = await axios.get(
+      `https://www.wunderground.com/weather/gb/${this.state.city}/`
+    );
+    this.setState({ weather });
+  };
 
   handleChange = (e) => {
     const value = e.target.value;
@@ -48,6 +47,7 @@ export default class Home extends Component {
   };
 
   render() {
+    console.log(this.props.teams);
     const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
       <div class="home">
@@ -61,17 +61,11 @@ export default class Home extends Component {
             <li>Bean</li>
           </ul>
           <p>Groups</p>
-          {this.props.teams
-            &&
-            this.props.teams.map((name) => 
-              <form>
-                
-                <p>{name.name}
-                </p>
+          {this.props.teams &&
+            this.props.teams.map((name) =>
+              <p>{name.name}</p>
+            )}
 
-                <button onClick={(e) => ('') }>Delete Squad</button>
-              </form>)}
-          
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout
@@ -80,37 +74,23 @@ export default class Home extends Component {
           </div>
         </div>
         <div class="main-container">
-        <form
-      onSubmit={
-        e => this.props.handleSubmit(e)
-      }>
-      {/* <input
-        class="search"
-        value={this.props.search}
-        onChange={e => this.props.handleChange(e)}
-        name='search'
-        type="text"
-        placeholder='Search Datadog employees'
-      />
-      <button type="submit">Search</button> */}
-      <SearchBar 
-        userInput={userInput}
-        listOfUsers={listOfUsers}
-        onSearchChange={onSearchChange}
-      />
-    </form>
+          <form onSubmit={(e) => this.props.handleSubmit(e)}>
+            <SearchBar
+              userInput={userInput}
+              listOfUsers={listOfUsers}
+              onSearchChange={onSearchChange}
+            />
+          </form>
           <div class="main">
             <h1>
               Hello{" "}
               {this.props.currentUser && this.props.currentUser.first_name}
             </h1>
-            <p>It is currently in
-             
-              {
-
-              }
-             
-              Sydney, Australia</p>
+            <p>
+              It is currently in
+              {}
+              Sydney, Australia
+            </p>
           </div>
           <div class="notifications">
             <h1>Here are your latest updates:</h1>
@@ -119,12 +99,26 @@ export default class Home extends Component {
             <p>Happy hour is this thursday at {""}</p>
           </div>
           <div class="groups">
-            <h1>3 teams</h1>
+            <h1>
+              Teams{" "}
+              <button class="create-team-button" onClick={""}>
+                +
+              </button>
+            </h1>
+            <form>
+              <input
+                name="name"
+                onChange={this.nameHandleChange}
+                placeholder="Create Team"
+              />
+              <button onClick={(e) => this.props.addTeam(this.state.name, this.props.currentUser && this.props.currentUser.id)}>
+                Create Team
+              </button>
+            </form>
+          </div>
             <ToggleCaret />
           </div>
         </div>
-      </div>
-     
-    )
+    );
   }
 }
