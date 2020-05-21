@@ -19,8 +19,6 @@ class SearchBar extends Component {
       searchOutput: [],
       searchClicked: false,
     };
-    // this.Option = this.Option.bind(this);
-    // this.truncateString = this.truncateString.bind(this);
   }
 
 
@@ -37,7 +35,7 @@ class SearchBar extends Component {
         <Link
           className="user-profile-link"
           to={{
-            pathname: "#",
+            pathname: "employee-profile",
             state: { userId: props.data.value },
           }}
         >
@@ -78,7 +76,6 @@ class SearchBar extends Component {
         <div className="search-container">
           <form
             className="form-container"
-            onSubmit={this.props.onSearchSubmit}
             onChange={this.props.onSearchChange}
           >
             <Select

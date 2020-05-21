@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ToggleCaret from './ToggleCaret'
-
+import axios from 'axios';
+import SearchBar from './SearchBar';
 
 export default class Home extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default class Home extends Component {
       currentUser
       &&
       currentUser.location
-    const weather = await Axios.get(`https://www.wunderground.com/weather/gb/${this.state.city}/`)
+    const weather = await axios.get(`https://www.wunderground.com/weather/gb/${this.state.city}/`)
     this.setState({weather})
   }
 

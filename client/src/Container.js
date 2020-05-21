@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
+import EmployeeProfile from './components/EmployeeProfile';
 
 import {
   registerUser,
@@ -222,15 +223,12 @@ class Container extends Component {
               onSearchChange={this.onSearchChange}
             />
           )}/>
-          {/* <Route exact path="/search-bar" render={(props) => (
-            <SearchBar 
-              userInput={this.state.userInput}
+          <Route exact path="/employee-profile" render={(props) => (
+            <EmployeeProfile
+              {...props}
               listOfUsers={this.state.listOfUsers}
-              userSearchResults={this.state.userSearchResults}
-              onSearchChange={this.onSearchChange}
-
             />
-          )} /> */}
+          )} />
         </Switch>
       </div>
     )
