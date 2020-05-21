@@ -15,7 +15,6 @@ import {
   removeToken
 } from './services/api-helper'
 import Register from './components/Register'
-import Axios from 'axios'
 
 class Container extends Component {
   constructor(props) {
