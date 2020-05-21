@@ -42,8 +42,9 @@ class SearchBar extends Component {
           }}
         >
           <span className="user-avatar"></span>
-          <span className="link-stock-symbol">{props.data.subLabel}</span>
-          <span className="link-stock-name">{this.truncateString(props.data.label, 40)}</span>
+          <span className="link-stock-symbol">{props.data.subLabel} {this.truncateString(props.data.label, 40)}</span>
+          {/* <span className="link-stock-name"></span> */}
+          <span className="user-location">{props.data.location}</span>
         </Link>
       </components.Option>
     );
@@ -58,11 +59,12 @@ class SearchBar extends Component {
   render() {
     const searchResults = this.props.listOfUsers;
     console.log(searchResults);
-    const searchOptions = searchResults.map(({ first_name, last_name }) => {
+    const searchOptions = searchResults.map(({ first_name, last_name, location }) => {
       return {
         value: first_name,
         label: last_name,
         subLabel: first_name,
+        location: location,
       };
     });
     const selectedOption = this.props.selectedOption;
@@ -92,7 +94,7 @@ class SearchBar extends Component {
               closeMenuOnSelect={true}
               classNamePrefix="react-select"
               backspaceRemovesValue={true}
-              // menuIsOpen={true}
+            //   menuIsOpen={true}
               styles={{
                 valueContainer: (base) => ({
                   ...base,
