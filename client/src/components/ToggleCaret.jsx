@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     width: '80%',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(10),
+    fontSize: theme.typography.pxToRem(12.5),
     fontWeight: theme.typography.fontWeightRegular,
   },
 }));
@@ -24,15 +24,14 @@ function ToggleCaret() {
       <ExpansionPanel>
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          aria-controls="panel1-content"
+          id="panel1-header"
         >
           <Typography className={classes.heading}>Project Managers</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            NEEEEEED TOOOOO PUTTT LIST ITEMS 
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -48,13 +47,12 @@ function ToggleCaret() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+           Moreeeeeeeeeee
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
-      
+
       <ExpansionPanel >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
@@ -63,6 +61,9 @@ function ToggleCaret() {
         >
           <Typography className={classes.heading}>Party Planning Club</Typography>
         </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+            <Typography>Ah shit, here we go again</Typography>
+        </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
   );
