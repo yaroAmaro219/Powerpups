@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import SearchBar from './SearchBar';
 
 
 export default class Home extends Component {
   render() {
+    const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
 
       <div>
@@ -31,7 +33,7 @@ export default class Home extends Component {
       onSubmit={
         e => this.props.handleSubmit(e)
       }>
-      <input
+      {/* <input
         class="search"
         value={this.props.search}
         onChange={e => this.props.handleChange(e)}
@@ -39,7 +41,12 @@ export default class Home extends Component {
         type="text"
         placeholder='Search Datadog employees'
       />
-      <button type="submit">Search</button>
+      <button type="submit">Search</button> */}
+      <SearchBar 
+        userInput={userInput}
+        listOfUsers={listOfUsers}
+        onSearchChange={onSearchChange}
+      />
     </form>
           <div class="main">
 
@@ -56,6 +63,7 @@ export default class Home extends Component {
           </div>
         </div>
 
+      </div>
       </div>
     )
   }

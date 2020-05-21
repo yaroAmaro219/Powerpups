@@ -5,7 +5,8 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-import {WEATHER_API_KEY} from './config'
+import SearchBar from './components/SearchBar';
+// import {WEATHER_API_KEY} from './config'
 
 import {
   registerUser,
@@ -22,6 +23,11 @@ class Container extends Component {
 
     this.state = {
       currentUser: null,
+      searchInput: '',
+      userSearchResults: [],
+      listOfUsers: [],
+      selectedOption: [],
+      loading: false,
       authFormData: {
         email: '',
         password: ''
@@ -45,10 +51,16 @@ class Container extends Component {
     const currentUser = await verifyUser();
     if (currentUser) {
       this.setState({
-        currentUser
-      })
+        currentUser,
+      });
     }
-   
+
+    const userResponse = await axios.get(`http://localhost:3000/users`);
+    const listOfUsers = userResponse.data;
+    console.log(listOfUsers)
+    this.setState({
+      listOfUsers,
+     });
   }
 
 
@@ -132,10 +144,27 @@ class Container extends Component {
     }) 
   }
 
+  searchForUsers = async () => {
+    this.setState({ loading: true });
+    const res = await axios.get(`http://localhost:3000/users`);
+    const userSearchResults = res;
+    this.setState({
+      userSearchResults,
+      loading: false
+    });
+  }
+
+  onSearchChange = async (e) => {
+    this.searchForUsers(e.target.value);
+    this.setState({
+      searchInput: e.target.value
+    });
+  }
+
   render() {
-    console.log(this.state.registerFormData)
-    console.log(this.state.currentUser)
-    console.log(this.state.authFormData)
+    // console.log(this.state.registerFormData)
+    // console.log(this.state.currentUser)
+    // console.log(this.state.authFormData)
     return (
       <div>
         <Switch>
@@ -155,13 +184,28 @@ class Container extends Component {
           )} />
           <Route exact path="/" render={(props) => (
             <Home
+              {...props}
               handleLogout={this.handleLogout}
               currentUser={this.state.currentUser}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
+              // ===============Ted's code=================
+              userInput={this.state.userInput}
+              listOfUsers={this.state.listOfUsers}
+              userSearchResults={this.state.userSearchResults}
+              onSearchChange={this.onSearchChange}
             />
           )}/>
+          {/* <Route exact path="/search-bar" render={(props) => (
+            <SearchBar 
+              userInput={this.state.userInput}
+              listOfUsers={this.state.listOfUsers}
+              userSearchResults={this.state.userSearchResults}
+              onSearchChange={this.onSearchChange}
+
+            />
+          )} /> */}
         </Switch>
 
       </div>
@@ -169,4 +213,4 @@ class Container extends Component {
   }
 }
 
-export default withRouter(Container)
+export default withRouter(Container);
