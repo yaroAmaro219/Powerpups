@@ -5,13 +5,14 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-import {WEATHER_API_KEY} from './config'
 
 import {
   registerUser,
   loginUser,
   verifyUser,
-  removeToken
+  removeToken,
+  postTeam,
+  showTeam
 } from './services/api-helper'
 import Register from './components/Register'
 import Axios from 'axios'
@@ -37,7 +38,9 @@ class Container extends Component {
         phone: '',
       },
       weather: '',
-      search: ''
+      search: '',
+      newTeam: '',
+      teams: ''
     }
   }
 
@@ -48,13 +51,24 @@ class Container extends Component {
         currentUser
       })
     }
-   
+   this.getTeam()
   }
 
+  addTeam = async (e) => {
+    const newTeam = await postTeam(e)
+    this.setState({
+      newTeam
+    })
+  }
+
+  getTeam = async () => {
+    const teams = await showTeam();
+    this.setState({teams})
+  }
 
   //================== AUTH ===================
 
-  handleChange = (e) => {
+  handleChange = (e) => { 
     const value = e.target.value;
     this.setState({
       ...this.state,
@@ -133,9 +147,7 @@ class Container extends Component {
   }
 
   render() {
-    console.log(this.state.registerFormData)
-    console.log(this.state.currentUser)
-    console.log(this.state.authFormData)
+    console.log(this.state.teams)
     return (
       <div>
         <Switch>
@@ -160,6 +172,8 @@ class Container extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
+              addTeam={this.addTeam}
+              teams={this.state.teams}
             />
           )}/>
         </Switch>
