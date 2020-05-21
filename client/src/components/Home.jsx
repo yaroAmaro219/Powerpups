@@ -61,11 +61,14 @@ export default class Home extends Component {
             <li>Bean</li>
           </ul>
           <p>Groups</p>
-          {this.props.teams &&
-            this.props.teams.map((name) =>
-              <p>{name.name}</p>
-            )}
-
+          {this.props.teams
+            &&
+            this.props.teams.map((name) => 
+              <div class='group-sidebar'>
+                <p>{name.name}
+                </p>
+                <button onSubmit={(e) => this.props.history.push('/')}onClick={(e) => {this.props.deleteTeam(name.id)} }>Delete Squad</button>
+              </div>)}
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout

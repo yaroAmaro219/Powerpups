@@ -49,7 +49,8 @@ class Container extends Component {
       weather: '',
       search: '',
       newTeam: '',
-      teams: ''
+      teams: '',
+      team:''
     }
   }
 
@@ -82,14 +83,16 @@ class Container extends Component {
   }
 
   deleteTeam = async (id) => {
-    const team = await destroyTeam();
+    const team = await destroyTeam(id);
+    this.setState({team})
   }
 
-  updateUser = async (e) => {
-    e.preventDefault();
-    const editUser = await putUser(e);
-  
+  updateUser = async (id, userData) => {
+    const currentUser = await putUser(id, userData);
+    this.setState({currentUser})
   }
+
+ 
 
   //================== AUTH ===================
 
