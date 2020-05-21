@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SearchBar from './SearchBar';
+import ToggleCaret from './ToggleCaret'
 
 
 export default class Home extends Component {
@@ -119,22 +119,8 @@ export default class Home extends Component {
             <p>Happy hour is this thursday at {""}</p>
           </div>
           <div class="groups">
-            <h1>
-              Teams{" "}
-              <button class="create-team-button" onClick={""}>
-                +
-              </button>
-            </h1>
-            <form>
-              <input
-                name="name"
-                onChange={this.nameHandleChange}
-                placeholder="Create Team"
-              />
-              <button onClick={(e) => this.props.addTeam(this.state.name, this.props.currentUser && this.props.currentUser.id)}>
-                Create Team
-              </button>
-            </form>
+            <h1>3 teams</h1>
+            <ToggleCaret />
           </div>
         </div>
       </div>

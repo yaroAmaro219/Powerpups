@@ -5,7 +5,6 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-import SearchBar from './components/SearchBar';
 // import {WEATHER_API_KEY} from './config'
 
 import {
