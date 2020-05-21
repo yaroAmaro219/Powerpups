@@ -11,7 +11,11 @@ import {
   registerUser,
   loginUser,
   verifyUser,
-  removeToken
+  removeToken,
+  postTeam,
+  showTeam,
+  destroyTeam,
+  putUser
 } from './services/api-helper'
 import Register from './components/Register'
 import Axios from 'axios'
@@ -22,6 +26,11 @@ class Container extends Component {
 
     this.state = {
       currentUser: null,
+      searchInput: '',
+      userSearchResults: [],
+      listOfUsers: [],
+      selectedOption: [],
+      loading: false,
       authFormData: {
         email: '',
         password: ''
@@ -35,9 +44,12 @@ class Container extends Component {
         title: '',
         location: '',
         phone: '',
+        image: null,
       },
       weather: '',
-      search: ''
+      search: '',
+      newTeam: '',
+      teams: ''
     }
   }
 
@@ -45,16 +57,43 @@ class Container extends Component {
     const currentUser = await verifyUser();
     if (currentUser) {
       this.setState({
-        currentUser
-      })
+        currentUser,
+      });
     }
-   
+
+    const userResponse = await axios.get(`http://localhost:3000/users`);
+    const listOfUsers = userResponse.data;
+    console.log(listOfUsers)
+    this.setState({
+      listOfUsers,
+     });
   }
 
+  addTeam = async (e) => {
+    const newTeam = await postTeam(e)
+    this.setState({
+      newTeam
+    })
+  }
+
+  getTeam = async () => {
+    const teams = await showTeam();
+    this.setState({teams})
+  }
+
+  deleteTeam = async (id) => {
+    const team = await destroyTeam();
+  }
+
+  updateUser = async (e) => {
+    e.preventDefault();
+    const editUser = await putUser(e);
+  
+  }
 
   //================== AUTH ===================
 
-  handleChange = (e) => {
+  handleChange = (e) => { 
     const value = e.target.value;
     this.setState({
       ...this.state,
@@ -80,7 +119,8 @@ class Container extends Component {
     this.props.history.push("/")
   }
 
-  handleLogout = () => {
+  handleLogout = async(id, params) => {
+    const status = await putUser(id, params)
     localStorage.removeItem("jwt");
     this.setState({currentUser: null})
     removeToken();
@@ -132,10 +172,27 @@ class Container extends Component {
     }) 
   }
 
+  searchForUsers = async () => {
+    this.setState({ loading: true });
+    const res = await axios.get(`http://localhost:3000/users`);
+    const userSearchResults = res;
+    this.setState({
+      userSearchResults,
+      loading: false
+    });
+  }
+
+  onSearchChange = async (e) => {
+    this.searchForUsers(e.target.value);
+    this.setState({
+      searchInput: e.target.value
+    });
+  }
+
   render() {
-    console.log(this.state.registerFormData)
-    console.log(this.state.currentUser)
-    console.log(this.state.authFormData)
+    // console.log(this.state.registerFormData)
+    // console.log(this.state.currentUser)
+    // console.log(this.state.authFormData)
     return (
       <div>
         <Switch>
@@ -155,18 +212,31 @@ class Container extends Component {
           )} />
           <Route exact path="/" render={(props) => (
             <Home
+              {...props}
               handleLogout={this.handleLogout}
               currentUser={this.state.currentUser}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
+              userInput={this.state.userInput}
+              listOfUsers={this.state.listOfUsers}
+              userSearchResults={this.state.userSearchResults}
+              onSearchChange={this.onSearchChange}
             />
           )}/>
-        </Switch>
+          {/* <Route exact path="/search-bar" render={(props) => (
+            <SearchBar 
+              userInput={this.state.userInput}
+              listOfUsers={this.state.listOfUsers}
+              userSearchResults={this.state.userSearchResults}
+              onSearchChange={this.onSearchChange}
 
+            />
+          )} /> */}
+        </Switch>
       </div>
     )
   }
 }
 
-export default withRouter(Container)
+export default withRouter(Container);
