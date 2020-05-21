@@ -63,14 +63,11 @@ export default class Home extends Component {
           {this.props.teams
             &&
             this.props.teams.map((name) => 
-              <form>
-                
+              <div class='group-sidebar'>
                 <p>{name.name}
                 </p>
-
-                <button onClick={(e) => ('') }>Delete Squad</button>
-              </form>)}
-          
+                <button onSubmit={(e) => this.props.history.push('/')}onClick={(e) => {this.props.deleteTeam(name.id)} }>Delete Squad</button>
+              </div>)}
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout

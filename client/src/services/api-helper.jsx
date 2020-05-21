@@ -55,8 +55,8 @@ export const destroyTeam = async (id) => {
   return resp.data
 }
 
-export const putUser = async (id, params) => {
-  const resp = await api.put(`/users/${id}`, { user: params })
+export const putUser = async (id, userData) => {
+  const resp = await api.put(`/users/${id}`, { user: userData })
   return resp.data
 }
 

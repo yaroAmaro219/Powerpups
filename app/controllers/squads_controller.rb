@@ -1,5 +1,5 @@
 class SquadsController < ApplicationController
-  # before_action :set_squad, only: [:show, :update, :destroy]
+  before_action :set_squad, only: [:show, :update, :destroy]
   before_action :authorize_request, except: [:create, :index]
 
   # GET /squads
