@@ -5,14 +5,21 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
+<<<<<<< HEAD
 import SearchBar from './components/SearchBar';
 // import {WEATHER_API_KEY} from './config'
+=======
+>>>>>>> master
 
 import {
   registerUser,
   loginUser,
   verifyUser,
-  removeToken
+  removeToken,
+  postTeam,
+  showTeam,
+  destroyTeam,
+  putUser
 } from './services/api-helper'
 import Register from './components/Register'
 import Axios from 'axios'
@@ -41,9 +48,12 @@ class Container extends Component {
         title: '',
         location: '',
         phone: '',
+        image: null,
       },
       weather: '',
-      search: ''
+      search: '',
+      newTeam: '',
+      teams: ''
     }
   }
 
@@ -54,6 +64,7 @@ class Container extends Component {
         currentUser,
       });
     }
+<<<<<<< HEAD
 
     const userResponse = await axios.get(`http://localhost:3000/users`);
     const listOfUsers = userResponse.data;
@@ -61,12 +72,36 @@ class Container extends Component {
     this.setState({
       listOfUsers,
      });
+=======
+   this.getTeam()
+>>>>>>> master
   }
 
+  addTeam = async (e) => {
+    const newTeam = await postTeam(e)
+    this.setState({
+      newTeam
+    })
+  }
+
+  getTeam = async () => {
+    const teams = await showTeam();
+    this.setState({teams})
+  }
+
+  deleteTeam = async (id) => {
+    const team = await destroyTeam();
+  }
+
+  updateUser = async (e) => {
+    e.preventDefault();
+    const editUser = await putUser(e);
+  
+  }
 
   //================== AUTH ===================
 
-  handleChange = (e) => {
+  handleChange = (e) => { 
     const value = e.target.value;
     this.setState({
       ...this.state,
@@ -92,7 +127,8 @@ class Container extends Component {
     this.props.history.push("/")
   }
 
-  handleLogout = () => {
+  handleLogout = async(id, params) => {
+    const status = await putUser(id, params)
     localStorage.removeItem("jwt");
     this.setState({currentUser: null})
     removeToken();
@@ -162,9 +198,13 @@ class Container extends Component {
   }
 
   render() {
+<<<<<<< HEAD
     // console.log(this.state.registerFormData)
     // console.log(this.state.currentUser)
     // console.log(this.state.authFormData)
+=======
+    console.log(this.state.teams)
+>>>>>>> master
     return (
       <div>
         <Switch>
@@ -190,11 +230,18 @@ class Container extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
+<<<<<<< HEAD
               // ===============Ted's code=================
               userInput={this.state.userInput}
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
               onSearchChange={this.onSearchChange}
+=======
+              addTeam={this.addTeam}
+              teams={this.state.teams}
+              deleteTeam={this.deleteTeam}
+              updateUser={this.updateUser}
+>>>>>>> master
             />
           )}/>
           {/* <Route exact path="/search-bar" render={(props) => (
@@ -207,7 +254,6 @@ class Container extends Component {
             />
           )} /> */}
         </Switch>
-
       </div>
     )
   }
