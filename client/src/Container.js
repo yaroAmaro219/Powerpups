@@ -5,14 +5,16 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-import SearchBar from './components/SearchBar';
-// import {WEATHER_API_KEY} from './config'
 
 import {
   registerUser,
   loginUser,
   verifyUser,
-  removeToken
+  removeToken,
+  postTeam,
+  showTeam,
+  destroyTeam,
+  putUser
 } from './services/api-helper'
 import Register from './components/Register'
 
@@ -40,9 +42,12 @@ class Container extends Component {
         title: '',
         location: '',
         phone: '',
+        image: null,
       },
       weather: '',
-      search: ''
+      search: '',
+      newTeam: '',
+      teams: ''
     }
   }
 
@@ -62,10 +67,31 @@ class Container extends Component {
      });
   }
 
+  addTeam = async (e) => {
+    const newTeam = await postTeam(e)
+    this.setState({
+      newTeam
+    })
+  }
+
+  getTeam = async () => {
+    const teams = await showTeam();
+    this.setState({teams})
+  }
+
+  deleteTeam = async (id) => {
+    const team = await destroyTeam();
+  }
+
+  updateUser = async (e) => {
+    e.preventDefault();
+    const editUser = await putUser(e);
+  
+  }
 
   //================== AUTH ===================
 
-  handleChange = (e) => {
+  handleChange = (e) => { 
     const value = e.target.value;
     this.setState({
       ...this.state,
@@ -91,7 +117,8 @@ class Container extends Component {
     this.props.history.push("/")
   }
 
-  handleLogout = () => {
+  handleLogout = async(id, params) => {
+    const status = await putUser(id, params)
     localStorage.removeItem("jwt");
     this.setState({currentUser: null})
     removeToken();
@@ -189,7 +216,6 @@ class Container extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
-              // ===============Ted's code=================
               userInput={this.state.userInput}
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
@@ -206,7 +232,6 @@ class Container extends Component {
             />
           )} /> */}
         </Switch>
-
       </div>
     )
   }

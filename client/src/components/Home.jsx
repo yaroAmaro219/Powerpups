@@ -1,16 +1,58 @@
 import React, { Component } from 'react'
-import SearchBar from './SearchBar';
+import ToggleCaret from './ToggleCaret'
 
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: {
+        teamName: "",
+        user_id: ''
+      },
+      weather: "",
+    };
+  }
+
+  componentDidMount = async () => {
+    const weather = await this.getWeather()
+  }
+
+  getWeather = async () => {
+    const { currentUser } = this.props
+    const city =
+      currentUser
+      &&
+      currentUser.location
+    const weather = await Axios.get(`https://www.wunderground.com/weather/gb/${this.state.city}/`)
+    this.setState({weather})
+  }
+
+  handleChange = (e) => {
+    const value = e.target.value;
+    this.setState({
+      ...this.state,
+      [e.target.name]: value,
+    });
+  };
+
+  nameHandleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState((prevState) => ({
+      name: {
+        ...prevState.team,
+        [name]: value,
+      },
+    }));
+  };
+
   render() {
     const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
-
-      <div>
       <div class="home">
         <div class="sidebar">
-          <img src={''} />
+          <img src={""} />
           <h1>My Dashboard</h1>
           <p>Direct Messages</p>
           <ul>
@@ -19,14 +61,23 @@ export default class Home extends Component {
             <li>Bean</li>
           </ul>
           <p>Groups</p>
-          <ul>
-            <li>The Power</li>
-            <li>The Pups</li>
-          </ul>
+          {this.props.teams
+            &&
+            this.props.teams.map((name) => 
+              <form>
+                
+                <p>{name.name}
+                </p>
+
+                <button onClick={(e) => ('') }>Delete Squad</button>
+              </form>)}
+          
           <div class="button-container">
-          <button class="logout" onClick={this.props.handleLogout}>Logout</button>
+            <button class="logout" onClick={this.props.handleLogout}>
+              Logout
+            </button>
             <button class="button">Settings</button>
-            </div>
+          </div>
         </div>
         <div class="main-container">
         <form
@@ -49,22 +100,31 @@ export default class Home extends Component {
       />
     </form>
           <div class="main">
+            <h1>
+              Hello{" "}
+              {this.props.currentUser && this.props.currentUser.first_name}
+            </h1>
+            <p>It is currently in
+             
+              {
 
-            <h1>Hello {this.props.currentUser
-              &&
-              this.props.currentUser.first_name}</h1>
-            <p>It is currently in Sydney, Australia</p>
+              }
+             
+              Sydney, Australia</p>
           </div>
           <div class="notifications">
-            <h1>You have 36 updates</h1>
+            <h1>Here are your latest updates:</h1>
+            <p>{""} new messages today</p>
+            <p>{""} have birthday's this week</p>
+            <p>Happy hour is this thursday at {""}</p>
           </div>
           <div class="groups">
             <h1>3 teams</h1>
+            <ToggleCaret />
           </div>
         </div>
-
       </div>
-      </div>
+     
     )
   }
 }
