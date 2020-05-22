@@ -67,7 +67,7 @@ class SearchBar extends Component {
 
   render() {
     const searchResults = this.props.listOfUsers;
-    console.log(searchResults);
+    // console.log(searchResults);
     const searchOptions = searchResults.map(({ first_name, last_name, location }) => {
       return {
         value: first_name,

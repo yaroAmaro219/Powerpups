@@ -40,8 +40,8 @@ export const postTeam = async (name) => {
   return resp.data;
 };
 
-export const putSquad = async (squad_id,params) => {
-  const resp = await api.put(`/sqauds/${squad_id}`, {squad: params})
+export const putSquad = async (squadId, data) => {
+  const resp = await api.put(`/sqauds/${squadId}`, {squad: data})
   return resp.data
 }
 
@@ -55,13 +55,25 @@ export const destroyTeam = async (id) => {
   return resp.data
 }
 
-export const putUser = async (id, params) => {
-  const resp = await api.put(`/users/${id}`, { user: params })
+export const putUser = async (id, userData) => {
+  const resp = await api.put(`/users/${id}`, { user: userData })
   return resp.data
 }
 
-export const postUserTeam = async (id, name) => {
-  const resp = await api.post(`/squads`, { squad: name });
-  return resp.data;
-};
+export const createEvent = async (squadId, data) => {
+  const resp = await api.post(`/squads/${squadId}/events`,{event: data} )
+  return resp.data
+}
+
+export const addUserToSquad = async (squadId) => {
+  const resp = await api.post(`squads/${squadId}/members`)
+  return resp.data
+}
+
+export const createPost = async (squadId, data) => {
+  const resp = await api.post(`/squads/${squadId}/posts`, { post: { post: data } })
+  return resp.data
+}
+
+
 
