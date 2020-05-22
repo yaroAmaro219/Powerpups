@@ -1,3 +1,8 @@
+/* =================== E =================== */
+.employee-profile-container {
+    width: 400px;
+}
+
 /* F */
 .form-container {
     display: flex;
@@ -13,9 +18,11 @@
 .profile-modal-container {
     width: 100%;
     display: flex;
-
 }
 
+.profile-header {
+    width: 400px;
+}
 /* ============ S ============ */
 .search-page-container {
     margin-left: -.5%;

@@ -17,8 +17,6 @@ class SearchBar extends Component {
     this.state = {
       searchInput: "",
       selectedOption: null,
-      // isSelected
-      searchOutput: [],
       searchClicked: false,
     };
   }

@@ -166,13 +166,11 @@ export default function PersistentDrawerRight() {
     <div className={classes.root}>
 
       <Drawer
-        className={classes.drawer}
+        className="employee"
         variant="persistent"
         anchor="right"
-        open={open}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
+        open={true}
+
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
