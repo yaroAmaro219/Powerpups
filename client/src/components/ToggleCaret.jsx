@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ToggleCaret() {
+function ToggleCaret(props) {
   const classes = useStyles();
 
   return (
@@ -27,11 +27,11 @@ function ToggleCaret() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography className={classes.heading}>Project Managers</Typography>
+          <Typography className={classes.heading}>P</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            NEEEEEED TOOOOO PUTTT LIST ITEMS 
+            Users
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -47,7 +47,7 @@ function ToggleCaret() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-           Moreeeeeeeeeee
+           Users
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -62,7 +62,7 @@ function ToggleCaret() {
           <Typography className={classes.heading}>Party Planning Club</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-            <Typography>Ah shit, here we go again</Typography>
+            <Typography>Users</Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
