@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {withRouter} from 'react-router-dom'
 import {Route, Switch} from 'react-router-dom'
 import Home from './components/Home'
-import Nav from './components/Nav'
+import PopUp from './components/PopUp'
 import axios from 'axios'
 import Login from './components/Login'
 import EmployeeProfile from './components/EmployeeProfile';
@@ -54,7 +54,19 @@ class Container extends Component {
       newTeam: "",
       teams: "",
       team: "",
+      user: {
+        first_name: '',
+        last_name: '',
+        status: '',
+        location: '',
+        birthday: '',
+        manager: false,
+        title: '',
+        department: '',
+        pronoun: ''
+      }
     };
+    
   }
 
   componentDidMount = async () => {
@@ -93,6 +105,17 @@ class Container extends Component {
   updateUser = async (id, userData) => {
     const currentUser = await putUser(id, userData);
     this.setState({ currentUser });
+  };
+
+  userHandleChange = (e) => {
+    const { name, value } = e.target;
+    this.setState((prevState) => ({
+      user: {
+        ...prevState.user,
+        [name]: value,
+
+      },
+    }));
   };
 
   //================== AUTH ===================
@@ -200,7 +223,7 @@ class Container extends Component {
   };
 
   render() {
-    // console.log(this.state.teams)
+    console.log(this.state.currentUser)
     return (
       <div>
         <Switch>
@@ -231,8 +254,11 @@ class Container extends Component {
               userSearchResults={this.state.userSearchResults}
               onSearchChange={this.onSearchChange}
               teams={this.state.teams}
+              user={this.state.user}
               addTeam={this.addTeam}
               deleteTeam={this.deleteTeam}
+              updateUser={this.updateUser}
+              userHandleChange={this.userHandleChange}
             />
           )}/>
           <Route exact path="/employee-profile" render={(props) => (

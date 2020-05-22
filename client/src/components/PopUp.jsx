@@ -3,7 +3,6 @@ import React, { Component } from "react";
 export default class PopUp extends Component {
   constructor() {
     super()
-
     this.state = {
 
     }
@@ -14,6 +13,7 @@ export default class PopUp extends Component {
   };
 
   render() {
+    const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
       <div class="modal">
         <div class="modal-content">
@@ -23,8 +23,11 @@ export default class PopUp extends Component {
           <form onClick={this.props.addUser}>
             <label>
               Add User:
+              </label>
               <input type="text" name="name" />
-            </label>
+              
+         
+      
             <br />
             <input type="submit" />
           </form>
