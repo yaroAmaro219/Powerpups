@@ -5,7 +5,6 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-import SearchBar from './components/SearchBar';
 // import {WEATHER_API_KEY} from './config'
 
 import {
@@ -50,7 +49,8 @@ class Container extends Component {
       weather: '',
       search: '',
       newTeam: '',
-      teams: ''
+      teams: '',
+      team:''
     }
   }
 
@@ -61,7 +61,7 @@ class Container extends Component {
         currentUser,
       });
     }
-
+    this.getTeam();
     const userResponse = await axios.get(`http://localhost:3000/users`);
     const listOfUsers = userResponse.data;
     console.log(listOfUsers)
@@ -83,14 +83,16 @@ class Container extends Component {
   }
 
   deleteTeam = async (id) => {
-    const team = await destroyTeam();
+    const team = await destroyTeam(id);
+    this.setState({team})
   }
 
-  updateUser = async (e) => {
-    e.preventDefault();
-    const editUser = await putUser(e);
-  
+  updateUser = async (id, userData) => {
+    const currentUser = await putUser(id, userData);
+    this.setState({currentUser})
   }
+
+ 
 
   //================== AUTH ===================
 
@@ -191,9 +193,7 @@ class Container extends Component {
   }
 
   render() {
-    // console.log(this.state.registerFormData)
-    // console.log(this.state.currentUser)
-    // console.log(this.state.authFormData)
+    console.log(this.state.teams)
     return (
       <div>
         <Switch>
@@ -219,11 +219,12 @@ class Container extends Component {
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               search={this.state.search}
-              // ===============Ted's code=================
               userInput={this.state.userInput}
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
               onSearchChange={this.onSearchChange}
+              teams={this.state.teams}
+              addTeam={this.addTeam}
             />
           )}/>
           {/* <Route exact path="/search-bar" render={(props) => (

@@ -8,6 +8,10 @@
   color: whitesmoke;
 }
 
+.group-sidebar {
+  display: flex;
+}
+
 .search {
   width: 60%;
   margin: 18px;
