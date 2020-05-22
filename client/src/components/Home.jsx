@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import ToggleCaret from "./ToggleCaret";
 import SearchBar from "./SearchBar";
 import axios from "axios";
+import axios from "axios";
+import SearchBar from "./SearchBar";
+// import Search from "./Search";
+
+import Paper from '@material-ui/core/Paper';
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -51,7 +57,7 @@ export default class Home extends Component {
     const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
       <div class="home">
-        <div class="sidebar">
+        <Paper class="sidebar">
           <img src={""} />
           <h1>My Dashboard</h1>
           <p>Direct Messages</p>
@@ -69,13 +75,22 @@ export default class Home extends Component {
                 </p>
                 <button onSubmit={(e) => this.props.history.push('/')}onClick={(e) => {this.props.deleteTeam(name.id)} }>Delete Squad</button>
               </div>)}
+          {this.props.teams &&
+            this.props.teams.map((name) => (
+              <form>
+                <p>{name.name}</p>
+
+                <button onClick={(e) => ""}>Delete Squad</button>
+              </form>
+            ))}
+
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout
             </button>
             <button class="button">Settings</button>
           </div>
-        </div>
+        </Paper>
         <div class="main-container">
           <form onSubmit={(e) => this.props.handleSubmit(e)}>
             <SearchBar
@@ -84,6 +99,16 @@ export default class Home extends Component {
               onSearchChange={onSearchChange}
             />
           </form>
+          {/* <Search
+            userInput={userInput}
+            listOfUsers={listOfUsers}
+            onSearchChange={onSearchChange}
+          /> */}
+          {/* <SearchBar
+            userInput={userInput}
+            listOfUsers={listOfUsers}
+            onSearchChange={onSearchChange}
+          /> */}
           <div class="main">
             <h1>
               Hello{" "}
@@ -95,12 +120,13 @@ export default class Home extends Component {
               Sydney, Australia
             </p>
           </div>
-          <div class="notifications">
+          <Paper class="notifications">
             <h1>Here are your latest updates:</h1>
             <p>{""} new messages today</p>
             <p>{""} have birthday's this week</p>
             <p>Happy hour is this thursday at {""}</p>
-          </div>
+          </Paper>
+          <Paper>
           <div class="groups">
             <h1>
               Teams{" "}
@@ -119,9 +145,13 @@ export default class Home extends Component {
               </button>
             </form>
           </div>
+          </Paper>
+          <Paper class="groups">
+            <h1>3 teams</h1>
             <ToggleCaret />
-          </div>
+          </Paper>
         </div>
+      </div>
     );
   }
 }
