@@ -8965,3 +8965,3290 @@ Completed 200 OK in 71ms (Views: 22.4ms | ActiveRecord: 47.8ms | Allocations: 27
 >>>>>>> 5ac8aecc52b61fe4ca0394e19c39748f638604f7
 
 
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:49:44 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 4.5ms | Allocations: 12701)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:49:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2090)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:49:44 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.0ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 3.9ms | Allocations: 4827)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:50:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1018)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:50:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2164)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:50:13 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1283)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:50:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:50:15 -0400
+Started GET "/squads" for ::1 at 2020-05-21 16:50:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 2295)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1339)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:50:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1065)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:50:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:50:30 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:50:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:50:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:50:42 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:50:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:50:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2023)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:50:53 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:51:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:51:09 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 16:51:09 -0400
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.2ms | Allocations: 2853)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.9ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.9ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:53:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:53:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:53:12 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:53:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 4.8ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:53:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:53:24 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:53:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:53:36 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 16:53:36 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 6.8ms | Allocations: 4688)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:54:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:54:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 16:54:26 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2343)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:54:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:54:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:54:49 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:55:22 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:55:22 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.3ms | Allocations: 2055)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:55:22 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:55:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:55:26 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 16:55:26 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.9ms | Allocations: 2230)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:56:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.4ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:56:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:56:12 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:56:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:56:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 1.8ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:56:26 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.8ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:56:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 2.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:56:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2140)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:56:42 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:56:58 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:56:58 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:56:58 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.1ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:57:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:57:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:57:00 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:57:02 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:57:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:57:02 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:57:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:57:09 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 16:57:09 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.8ms | Allocations: 2228)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:57:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:57:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:57:17 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.7ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:58:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:58:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.1ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:58:37 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:59:06 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 16:59:06 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:59:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 16:59:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 16:59:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 16:59:35 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms | Allocations: 2343)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:00:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:00:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2097)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:00:48 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:02:53 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 14ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:02:53 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 17:02:53 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2230)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1339)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:03:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 2.2ms | Allocations: 1046)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:03:08 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:03:08 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.8ms | Allocations: 2163)
+
+
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms | Allocations: 3228)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:03:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:03:25 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:03:25 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 1.1ms | Allocations: 2959)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.8ms | Allocations: 3369)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:03:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:03:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:03:30 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:06:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 4.9ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:06:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:06:37 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:07:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:07:24 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1281)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:07:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:07:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:07:33 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:07:33 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.8ms | Allocations: 2960)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.8ms | Allocations: 3427)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:07:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:07:36 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:07:36 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.7ms | Allocations: 2805)
+
+
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 3228)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:07:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:07:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:07:56 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:07:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:07:59 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 17:07:59 -0400
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 1.0ms | Allocations: 2349)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:08:16 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:08:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 17:08:16 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:09:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 5.8ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:09:15 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:09:15 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1423)
+
+
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 1.1ms | Allocations: 3389)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:09:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:09:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:09:38 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:10:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:10:26 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1284)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:10:28 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:28 -0400
+Started GET "/squads" for ::1 at 2020-05-21 17:10:28 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 2683)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 3575)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:10:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:10:35 -0400
+Started GET "/users" for ::1 at 2020-05-21 17:10:35 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 1423)
+
+
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.9ms | Allocations: 3389)
+
+
+Started DELETE "/squads/1" for ::1 at 2020-05-21 17:10:37 -0400
+Processing by SquadsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads" WHERE "squads"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/squads_controller.rb:45:in `set_squad'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[36mSquad Destroy (0.3ms)[0m  [1m[31mDELETE FROM "squads" WHERE "squads"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 1.5ms | Allocations: 3351)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:10:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.8ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:10:40 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:10:54 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 17:13:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 17:13:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2151)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 17:13:37 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGroups (20200521211806)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGroups (20200521211806)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateGroups (20200521211806)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200521211806"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (22.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMembers (20200521215548)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMembers (20200521215548)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (74.3ms)[0m  [1m[35mCREATE TABLE "members" ("id" bigserial primary key, "user_id" bigint, "squad_id" bigint NOT NULL, "is_admin" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_fe63915777"
+FOREIGN KEY ("squad_id")
+  REFERENCES "squads" ("id")
+)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_members_on_user_id" ON "members"  ("user_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_members_on_squad_id" ON "members"  ("squad_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200521215548"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20200521215744)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "post" text, "user_id" bigint NOT NULL, "squad_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_5b5ddfd518"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_03717e1234"
+FOREIGN KEY ("squad_id")
+  REFERENCES "squads" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_user_id" ON "posts"  ("user_id")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_posts_on_squad_id" ON "posts"  ("squad_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200521215744"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20200521220347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "user_id" bigint NOT NULL, "group_id" bigint NOT NULL, "title" character varying, "description" character varying, "date" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_61fbf6ca48"
+FOREIGN KEY ("group_id")
+  REFERENCES "groups" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20200521220347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "squad_id" bigint NOT NULL, "title" character varying, "description" character varying, "date" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_be5a9b2079"
+FOREIGN KEY ("squad_id")
+  REFERENCES "squads" ("id")
+)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_events_on_squad_id" ON "events"  ("squad_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200521220347"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:06:38 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 72ms (Views: 0.9ms | ActiveRecord: 6.6ms | Allocations: 12677)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Started GET "/squads" for ::1 at 2020-05-21 18:06:38 -0400
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 2362)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 4.7ms | Allocations: 4719)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 2041)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2040)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2040)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:06:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:07:32 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 1001)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:07:33 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Started GET "/users" for ::1 at 2020-05-21 18:07:33 -0400
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 1445)
+
+
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started POST "/squads" for ::1 at 2020-05-21 18:09:23 -0400
+Processing by SquadsController#create as HTML
+  Parameters: {"squad"=>{"name"=>"MARISSA"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+  [1m[36mSquad Create (1.2ms)[0m  [1m[32mINSERT INTO "squads" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "MARISSA"], ["created_at", "2020-05-21 22:09:23.088747"], ["updated_at", "2020-05-21 22:09:23.088747"]]
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+Completed 201 Created in 16ms (Views: 0.6ms | ActiveRecord: 10.2ms | Allocations: 2780)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:09:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:09:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:09:23 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1281)
+
+
+Started DELETE "/squads/9" for ::1 at 2020-05-21 18:09:27 -0400
+Processing by SquadsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads" WHERE "squads"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/squads_controller.rb:45:in `set_squad'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[36mSquad Destroy (3.4ms)[0m  [1m[31mDELETE FROM "squads" WHERE "squads"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+Completed 204 No Content in 8ms (ActiveRecord: 4.0ms | Allocations: 3331)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:09:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:09:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:09:30 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:10:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:10:00 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:10:00 -0400
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2315)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1231)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:10:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1047)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:10:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2145)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:10:09 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:10:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:10:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:10:26 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:10:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:10:31 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:10:31 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms | Allocations: 2811)
+
+
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 3120)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:10:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:10:53 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:10:53 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 10.4ms | Allocations: 4740)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:11:28 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:11:28 -0400
+Processing by SquadsController#index as HTML
+Started GET "/users" for ::1 at 2020-05-21 18:11:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (2.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 2.3ms | Allocations: 2598)
+
+
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.7ms | Allocations: 3254)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:12:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:12:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:12:21 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2317)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:12:27 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:12:27 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:12:27 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2678)
+
+
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.7ms | Allocations: 3243)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:12:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:12:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:12:30 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:12:37 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:12:37 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:12:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Processing by SquadsController#index as HTML
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2961)
+
+
+  [1m[36mSquad Load (0.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 1412)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:12:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1000)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:12:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2140)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:12:41 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:18:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 21ms (Views: 3.3ms | ActiveRecord: 4.4ms | Allocations: 1103)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:18:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms | Allocations: 2023)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:18:33 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:19:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:19:23 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Started GET "/users" for ::1 at 2020-05-21 18:19:23 -0400
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1456)
+
+
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.7ms | Allocations: 2094)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:19:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 26ms (Views: 0.5ms | ActiveRecord: 12.2ms | Allocations: 1031)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:19:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 2100)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:19:40 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (2.9ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.9ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:19:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:19:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.7ms | Allocations: 2049)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:19:57 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:20 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.7ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:24:20 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:24:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:24:34 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:24:34 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (1.0ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 2.3ms | Allocations: 3317)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 1.0ms | Allocations: 3255)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.9ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:24:35 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:24:35 -0400
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.9ms | Allocations: 2353)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:24:38 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:24:38 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 2228)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1231)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:24:46 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:24:46 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 1962)
+
+
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 3120)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:24:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:24:56 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:24:56 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1957)
+
+
+Completed 200 OK in 39ms (Views: 38.9ms | ActiveRecord: 0.2ms | Allocations: 3123)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:25:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:25:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 2026)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:25:00 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:26:50 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 18ms (Views: 3.1ms | ActiveRecord: 0.8ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:26:50 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:26:50 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (1.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.3ms | Allocations: 3091)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.3ms | Allocations: 3260)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:26:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:26:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:26:57 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:27:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:27:08 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:27:08 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 2805)
+
+
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3120)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:27:12 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:27:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:27:12 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:27:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:27:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:27:17 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:28:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:28:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:28:48 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:29:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:29:55 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:29:55 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 1.2ms | Allocations: 3092)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.8ms | Allocations: 3261)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:30:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:30:09 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:30:09 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 2220)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:30:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:30:13 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:30:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:39:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.3ms | Allocations: 1102)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:39:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:39:13 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.9ms | Allocations: 2337)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:39:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:39:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:39:33 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (5.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 5.7ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:39:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:39:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 2100)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:39:48 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.8ms | Allocations: 1234)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:40:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 1046)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:40:13 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:40:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:40:20 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 999)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:40:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:40:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms | Allocations: 2145)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:40:33 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:40:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:40:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.7ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:40:49 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:41:41 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:41:41 -0400
+Processing by SquadsController#index as HTML
+Started GET "/users" for ::1 at 2020-05-21 18:41:41 -0400
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 1.1ms | Allocations: 1497)
+
+
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:41:44 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:41:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2052)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:41:44 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:41:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:41:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:41:52 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:41:56 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:41:56 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:41:56 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 1.1ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:42:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:42:09 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:42:09 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (1.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 2169)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.3ms | Allocations: 3281)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:42:14 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:42:14 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.8ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:42:14 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:42:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:42:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:42:24 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:42:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:42:26 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2150)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:42:26 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:42:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:42:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:42:34 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms | Allocations: 2343)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:43:00 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:43:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:43:00 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:43:26 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 1002)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:43:26 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:43:26 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 3100)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.8ms | Allocations: 3278)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:43:50 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.9ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:43:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:43:50 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.1ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:47:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:47:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Started GET "/squads" for ::1 at 2020-05-21 18:47:46 -0400
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms | Allocations: 2335)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:50:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:50:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:50:42 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.6ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.6ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:51:46 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:51:46 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:51:46 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 3.0ms | Allocations: 3442)
+
+
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.1ms | Allocations: 3279)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:52:08 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:52:08 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Started GET "/squads" for ::1 at 2020-05-21 18:52:08 -0400
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2304)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:52:17 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:52:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Started GET "/squads" for ::1 at 2020-05-21 18:52:17 -0400
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2325)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:52:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:52:34 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:52:34 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.6ms | Allocations: 2805)
+
+
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 3120)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:52:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:52:55 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 18:52:55 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 2343)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:52:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:52:59 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:52:59 -0400
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms | Allocations: 2067)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1232)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:53:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:53:25 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:53:25 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 2319)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:53:47 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 4.0ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:53:47 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:53:47 -0400
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 1.0ms | Allocations: 2347)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:54:29 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.1ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:54:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:54:29 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:54:51 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:54:51 -0400
+Started GET "/squads" for ::1 at 2020-05-21 18:54:51 -0400
+Processing by UsersController#index as HTML
+Processing by SquadsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mSquad Load (0.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 2164)
+
+
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 3121)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:54:52 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:54:52 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:54:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:55:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:55:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:55:23 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:55:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:55:45 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:55:45 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 2338)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1232)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:55:51 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 2.0ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:55:51 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:55:51 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Processing by SquadsController#index as HTML
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2990)
+
+
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1393)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:56:57 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:56:57 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 18:56:57 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1173)
+
+
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 8.4ms | Allocations: 4740)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:57:03 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 1.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:57:03 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.6ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:57:03 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:57:23 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.7ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:57:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:57:24 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:57:43 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 18:57:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.9ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:57:43 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.8ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 18:57:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 18:57:48 -0400
+Started GET "/users" for ::1 at 2020-05-21 18:57:48 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.8ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 2254)
+
+
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.6ms | Allocations: 3254)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:02:15 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:02:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:02:15 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:03:01 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:03:01 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 19:03:01 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.7ms | Allocations: 2340)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1232)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:03:13 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:03:13 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:03:13 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:03:30 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 37ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:03:30 -0400
+Started GET "/users" for ::1 at 2020-05-21 19:03:30 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (0.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.7ms | Allocations: 2166)
+
+
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.4ms | Allocations: 3095)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:04:09 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:04:09 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 19:04:09 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 2224)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.2ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:05:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:05:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 19:05:59 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:06:11 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:06:11 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:06:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:06:18 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:06:18 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1197)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:06:18 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:06:40 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:06:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 19:06:40 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 2344)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started PUT "/users/[object%20Object]" for ::1 at 2020-05-21 19:07:03 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"id"=>"[object Object]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 681)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=[object Object]):
+  
+app/controllers/users_controller.rb:52:in `set_user'
+Started PUT "/users/[object%20Object]" for ::1 at 2020-05-21 19:07:07 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"id"=>"[object Object]", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 703)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=[object Object]):
+  
+app/controllers/users_controller.rb:52:in `set_user'
+Started PUT "/users/[object%20Object]" for ::1 at 2020-05-21 19:07:07 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"id"=>"[object Object]", "user"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 675)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=[object Object]):
+  
+app/controllers/users_controller.rb:52:in `set_user'
+Started PUT "/users/[object%20Object]" for ::1 at 2020-05-21 19:07:07 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"id"=>"[object Object]", "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:52:in `set_user'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 675)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=[object Object]):
+  
+app/controllers/users_controller.rb:52:in `set_user'
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:07:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 1007)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:07:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2063)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:07:24 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:08:19 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:08:19 -0400
+Processing by UsersController#index as HTML
+Started GET "/squads" for ::1 at 2020-05-21 19:08:19 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.8ms | Allocations: 2318)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:08:31 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:08:31 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:08:31 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1173)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:09:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 999)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:09:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Started GET "/squads" for ::1 at 2020-05-21 19:09:35 -0400
+Completed 200 OK in 17ms (Views: 3.2ms | ActiveRecord: 13.9ms | Allocations: 2339)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1173)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:11:00 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Angelo ", "last_name"=>"Yo", "email"=>"bye@bye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Hello", "location"=>"London", "phone"=>"1111111111", "image"=>"https://imgur.com/O5vY75D", "birthday"=>"08/28/1996", "status"=>"active"}}
+[31mUnpermitted parameters: :image, :birthday, :status[0m
+Completed 422 Unprocessable Entity in 236ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 3998)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:11:43 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Angelo ", "last_name"=>"Yo", "email"=>"bye@bye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Hello", "location"=>"London", "phone"=>"1111111111", "image"=>"https://imgur.com/O5vY75D", "birthday"=>"08/28/1996", "status"=>"active"}}
+Completed 422 Unprocessable Entity in 225ms (Views: 0.1ms | ActiveRecord: 7.2ms | Allocations: 10521)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7114467649407241830)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7114467649407241830)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:12:17 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 53ms (Views: 0.8ms | ActiveRecord: 4.5ms | Allocations: 12677)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:12:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms | Allocations: 2090)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:12:17 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (1.1ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 4.1ms | Allocations: 4719)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:12:34 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Uri", "last_name"=>"Amari", "email"=>"bye@bye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Hello", "location"=>"London", "phone"=>"9172172984", "image"=>"https://imgur.com/O5vY75D", "birthday"=>"08/28/1996", "status"=>"active"}}
+Completed 422 Unprocessable Entity in 263ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4083)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:13:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 1023)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:13:48 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 1.0ms | Allocations: 2145)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:13:48 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1175)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:14:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Angelo ", "last_name"=>"Amari", "email"=>"ye@ye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Hello", "location"=>"London", "phone"=>"3474006623", "image"=>"https://imgur.com/O5vY75D", "birthday"=>"08/28/1996", "status"=>"active"}}
+Completed 422 Unprocessable Entity in 208ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 884)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:14:39 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 25ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 11265)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:14:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 19:14:39 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2386)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 4.0ms | Allocations: 4645)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:14:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Uri", "last_name"=>"Amari", "email"=>"ye@ye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Pet", "location"=>"London", "phone"=>"9172172984", "image"=>"", "birthday"=>"08/28/1996", "status"=>"active"}}
+[31mUnpermitted parameter: :image[0m
+Completed 422 Unprocessable Entity in 209ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1107)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:15:10 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1001)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:15:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 1.1ms | Allocations: 2069)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:15:10 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.7ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 1231)
+
+
+Started POST "/users" for ::1 at 2020-05-21 19:15:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"first_name"=>"Uri", "last_name"=>"Amari", "email"=>"ye@ye.com", "password"=>"[FILTERED]", "department"=>"software", "title"=>"Pet", "location"=>"London", "phone"=>"9172172984", "birthday"=>"08/28/1996", "status"=>"active"}}
+Completed 422 Unprocessable Entity in 209ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 868)
+
+
+Started POST "/auth/login" for ::1 at 2020-05-21 19:20:11 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"auth"=>{"email"=>"bye@bye.com", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"email"=>"bye@bye.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bye@bye.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 225ms (Views: 2.1ms | ActiveRecord: 1.0ms | Allocations: 1367)
+
+
+Started POST "/squads" for ::1 at 2020-05-21 19:21:15 -0400
+Processing by SquadsController#create as HTML
+  Parameters: {"squad"=>{"name"=>"jimmy john"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+  [1m[36mSquad Create (2.3ms)[0m  [1m[32mINSERT INTO "squads" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jimmy john"], ["created_at", "2020-05-21 23:21:15.944498"], ["updated_at", "2020-05-21 23:21:15.944498"]]
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/squads_controller.rb:21:in `create'
+Completed 201 Created in 15ms (Views: 2.1ms | ActiveRecord: 5.3ms | Allocations: 2683)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:21:16 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 0.4ms | Allocations: 1002)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:21:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 2.8ms | Allocations: 2140)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:21:16 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.9ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 1339)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:21:39 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.7ms | Allocations: 1046)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:21:39 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1281)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:21:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 2022)
+
+
+Started DELETE "/squads/10" for ::1 at 2020-05-21 19:21:41 -0400
+Processing by SquadsController#destroy as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mSquad Load (0.3ms)[0m  [1m[34mSELECT "squads".* FROM "squads" WHERE "squads"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/squads_controller.rb:45:in `set_squad'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[36mSquad Destroy (9.3ms)[0m  [1m[31mDELETE FROM "squads" WHERE "squads"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/squads_controller.rb:39:in `destroy'
+Completed 204 No Content in 17ms (ActiveRecord: 10.5ms | Allocations: 3330)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:21:44 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 999)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:21:44 -0400
+Started GET "/users" for ::1 at 2020-05-21 19:21:44 -0400
+Processing by SquadsController#index as HTML
+Processing by UsersController#index as HTML
+  [1m[36mSquad Load (1.5ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.5ms | Allocations: 2254)
+
+
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.8ms | Allocations: 3094)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:34:42 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 61ms (Views: 0.9ms | ActiveRecord: 6.0ms | Allocations: 12677)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:34:42 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/squads" for ::1 at 2020-05-21 19:34:42 -0400
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 2407)
+
+
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 2.5ms | Allocations: 4719)
+
+
+Started GET "/auth/verify" for ::1 at 2020-05-21 19:35:21 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1018)
+
+
+Started GET "/users" for ::1 at 2020-05-21 19:35:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2056)
+
+
+Started GET "/squads" for ::1 at 2020-05-21 19:35:21 -0400
+Processing by SquadsController#index as HTML
+  [1m[36mSquad Load (0.4ms)[0m  [1m[34mSELECT "squads".* FROM "squads"[0m
+  ↳ app/controllers/squads_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1192)
+
+

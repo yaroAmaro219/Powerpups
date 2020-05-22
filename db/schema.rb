@@ -10,10 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_21_151105) do
+ActiveRecord::Schema.define(version: 2020_05_21_220347) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "events", force: :cascade do |t|
+    t.bigint "squad_id", null: false
+    t.string "title"
+    t.string "description"
+    t.datetime "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["squad_id"], name: "index_events_on_squad_id"
+  end
+
+  create_table "members", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "squad_id", null: false
+    t.boolean "is_admin"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["squad_id"], name: "index_members_on_squad_id"
+    t.index ["user_id"], name: "index_members_on_user_id"
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.text "post"
+    t.bigint "user_id", null: false
+    t.bigint "squad_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["squad_id"], name: "index_posts_on_squad_id"
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
 
   create_table "squads", force: :cascade do |t|
     t.string "name"
@@ -43,4 +73,8 @@ ActiveRecord::Schema.define(version: 2020_05_21_151105) do
     t.string "birthday"
   end
 
+  add_foreign_key "events", "squads"
+  add_foreign_key "members", "squads"
+  add_foreign_key "posts", "squads"
+  add_foreign_key "posts", "users"
 end
