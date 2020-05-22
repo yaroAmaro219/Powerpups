@@ -15,7 +15,10 @@ import {
   postTeam,
   showTeam,
   destroyTeam,
-  putUser
+  putUser,
+  createEvent,
+  addUserToSquad,
+  createPost,
 } from './services/api-helper'
 import Register from './components/Register'
 
@@ -84,6 +87,7 @@ class Container extends Component {
   deleteTeam = async (id) => {
     const team = await destroyTeam(id);
     this.setState({ team });
+    this.props.history.push("/");
   };
 
   updateUser = async (id, userData) => {

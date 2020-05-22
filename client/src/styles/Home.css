@@ -13,6 +13,10 @@
   margin-top: 9px;
 }
 
+.squad {
+  cursor: pointer;
+}
+
 .direct-messages {
   min-height: 162px;
 }
@@ -31,7 +35,12 @@
 }
 
 .create-team-button {
-  margin-left: 486px;
+  margin-left: 60%;
+  justify-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 36px;
 }
 
 .team-title {
@@ -41,6 +50,10 @@
 .search {
   width: 60%;
   margin: 18px;
+}
+
+.search-container {
+  margin-top: 18px;
 }
 
 .home {
@@ -73,7 +86,7 @@
 .groups {
   background-color: whitesmoke;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  height: 21%;
+  height: 30%;
   margin: 2% 2%;
   padding-left: 2%;
   padding-top: 1%;
