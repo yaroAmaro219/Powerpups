@@ -3,7 +3,7 @@ const axios = require("axios");
 const api = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
-      ? "https://"
+      ? 	"https://git.heroku.com/power-pups.git"
       : "http://localhost:3000",
 });
 

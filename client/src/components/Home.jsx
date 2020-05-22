@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import ToggleCaret from "./ToggleCaret";
 import SearchBar from "./SearchBar";
 import axios from "axios";
-import Paper from '@material-ui/core/Paper';
-import PopUp from './PopUp'
-import Delete from '../images/delete.svg'
+import Paper from "@material-ui/core/Paper";
+import PopUp from "./PopUp";
+import Delete from "../images/delete.svg";
 
 export default class Home extends Component {
   constructor(props) {
@@ -15,30 +15,38 @@ export default class Home extends Component {
         teamName: "",
         user_id: "",
       },
+      edit: false,
       weather: "",
       createButton: null,
       seen: false,
+      setting: false,
     };
   }
 
   componentDidMount = async () => {
-    const weather = await this.getWeather(this.props.currentUser && this.props.currentUser.location);
-    console.log(weather)
+    const weather = await this.getWeather();
+    this.setState({weather})
+    console.log(weather);
   };
 
   togglePop = () => {
     this.setState({
-      seen: !this.state.seen
-    })
-  }
+      seen: !this.state.seen,
+    });
+  };
+
+  toggleSet = () => {
+    this.setState({
+      setting: !this.state.setting,
+    });
+  };
 
   getWeather = async (city) => {
     let resp = await axios(
-      `http://api.openweathermap.org/data/2.5/weather?q=London&appid=3e9807f4c3d791c792dc167a5fcadc53/`
+      `http://api.openweathermap.org/data/2.5/weather?${city}&appid=b4f8c7c8fac2ad5dd7b14b760bd9230c/`
     );
-    let data = resp.data
-    console.log(data)
-    return resp
+    console.log(resp.data);
+    return resp.data;
   };
 
   handleChange = (e) => {
@@ -60,8 +68,7 @@ export default class Home extends Component {
   };
 
   render() {
-    console.log(this.props.currentUser && this.props.currentUser.location)
-    console.log(this.props.weather);
+    console.log(this.props.currentUser && this.props.currentUser.id);
 
     const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
@@ -70,35 +77,125 @@ export default class Home extends Component {
           <img src={""} />
           <h1>My Dashboard</h1>
           <div class="direct-messages">
-          <p>Direct Messages</p>
-          
-          {this.props.listOfUsers
-            &&
-            this.props.listOfUsers.map((user) => 
-              <div class="users-direct-message">
-                <p>{user.name}</p>
+            <p>Direct Messages</p>
+
+            {this.props.listOfUsers &&
+              this.props.listOfUsers.map((user) => (
+                <div class="users-direct-message">
+                  <p>{user.name}</p>
                 </div>
-              )}
-            </div>
+              ))}
+          </div>
           <p>Groups</p>
-          {this.props.teams
-            &&
-            this.props.teams.map((name) => 
-              <div class='group-sidebar'>
-                
-                <p class="squad" >
-                  <p onClick={this.togglePop}>{name.name}
-                    </p>
-                  {this.state.seen ? <PopUp toggle={this.togglePop} addUser={this.props.addUser} /> : null}
+          {this.props.teams &&
+            this.props.teams.map((name) => (
+              <div class="group-sidebar">
+                <p class="squad">
+                  <p onClick={this.togglePop}>{name.name}</p>
+                  {this.state.seen ? (
+                    <PopUp
+                      toggle={this.togglePop}
+                      addUser={this.props.addUser}
+                    />
+                  ) : null}
                 </p>
-                <button class="delete" onClick={() => (this.props.deleteTeam(name.id))}><img src={Delete}/></button>
-              </div>)}
+                <button
+                  class="delete"
+                  onClick={() => this.props.deleteTeam(name.id)}>
+                  <img src={Delete} />
+                </button>
+              </div>
+            ))}
 
           <div class="button-container">
             <button class="logout" onClick={this.props.handleLogout}>
               Logout
             </button>
-            <button class="button">Settings</button>
+            <button class="button" onClick={this.toggleSet}>
+              Settings
+            </button>
+            {this.state.setting ? (
+              <div class="settings-container">
+                {this.state.edit
+                  ?
+                  <form>
+                    <input
+                      onChange={this.props.userHandleChange}
+                      name='first_name'
+                      value={this.props.user.first_name}
+                      placeholder='First Name'
+                    />
+                   <input
+                      onChange={this.props.userHandleChange}
+                      name='last_name'
+                      value={this.props.user.last_name}
+                      placeholder='Last Name'
+                    />
+                    <input
+                      name='location'
+                      value={this.props.user.location}
+                      placeholder='Location'
+                      onChange={this.props.userHandleChange}
+                    />
+                    <input
+                      name='phone'
+                      value={this.props.user.phone}
+                      placeholder='Phone'
+                      onChange={this.props.userHandleChange}
+                    />
+                    <input
+                      name='birthday'
+                      value={this.props.user.birthday}
+                      placeholder='Birthday'
+                      onChange={this.props.userHandleChange}
+                    />
+                    <input
+                      name='pronoun'
+                      value={this.props.user.pronoun}
+                      placeholder='Pronoun'
+                      onChange={this.props.userHandleChange}
+                    />
+                    <input
+                      name='status'
+                      value={this.props.user.status}
+                      placeholder='Status'
+                      onChange={this.props.userHandleChange}
+                    />
+                  </form>
+                  : 
+                 <div>
+                   <p>
+                  {this.props.currentUser && this.props.currentUser.first_name}
+                </p>
+                <p>
+                  {this.props.currentUser && this.props.currentUser.last_name}
+                </p>
+                  <p>
+                  {this.props.currentUser && this.props.currentUser.location}
+                </p>
+                <p>
+                  {this.props.currentUser && this.props.currentUser.title}
+                </p>
+                <p>
+                  {this.props.currentUser && this.props.currentUser.department}
+                </p>
+                <p>
+                  {this.props.currentUser && this.props.currentUser.phone}
+                </p>
+                    </div>
+                }
+                <div class="buttons-below-edit">
+                <button onClick={(e) => { this.setState({ edit: !this.state.edit }) }}>Edit</button>
+                  <button onClick={(e) => {
+                    this.props.updateUser(this.props.currentUser
+                      && this.props.currentUser.id, this.props.user)
+                  }}>
+                  Submit
+                  </button>
+                  <button>Delete Account</button>
+                  </div>
+              </div>
+            ) : null}
           </div>
         </Paper>
         <div class="main-container">
@@ -116,16 +213,12 @@ export default class Home extends Component {
             </h1>
             <p>
               It is currently 
-               {
-                this.state.weather
-               }
-               
-              in 
+              {this.state.weather}
+              in
               <p class="city">
-              {this.props.currentUser
-                &&
-                  this.props.currentUser.location}
-                </p>
+                {this.props.currentUser && this.props.currentUser.location}
+                
+              </p>
             </p>
           </div>
           <Paper class="notifications">
@@ -135,53 +228,63 @@ export default class Home extends Component {
             <p>Happy hour is this thursday at {""}</p>
           </Paper>
           <Paper class="groups">
-         
             <div class="teams">
-            <h1 class="teams-title">
-                Teams{" "}
-              </h1>
-              
-              {this.state.createButton
-                ?
-                  <button
-                  class="create-team-button"
-                  onClick={(e) => this.setState({
-                    createButton: false
-                  })}> - </button>
-                :
+              <h1 class="teams-title">Teams </h1>
+
+              {this.state.createButton ? (
                 <button
                   class="create-team-button"
-                  onClick={(e) => this.setState({
-                    createButton: true
-                  })}> + </button>
-                    }
-                    
-                  
-              
-         
-              {this.state.createButton
-                ?
+                  onClick={(e) =>
+                    this.setState({
+                      createButton: false,
+                    })
+                  }
+                >
+                  {" "}
+                  -{" "}
+                </button>
+              ) : (
+                <button
+                  class="create-team-button"
+                  onClick={(e) =>
+                    this.setState({
+                      createButton: true,
+                    })
+                  }
+                >
+                  {" "}
+                  +{" "}
+                </button>
+              )}
+
+              {this.state.createButton ? (
                 <form>
                   <input
                     name="name"
                     onChange={this.nameHandleChange}
                     placeholder="Create Team"
                   />
-                  <button onClick={(e) => this.props.addTeam(this.state.name, this.props.currentUser && this.props.currentUser.id)}>
+                  <button
+                    onClick={(e) =>
+                      this.props.addTeam(
+                        this.state.name,
+                        this.props.currentUser && this.props.currentUser.id
+                      )
+                    }
+                  >
                     Create Team
-              </button>
-                  
-                  </form>
-                  :
-                  null
-                }
-              </div>
-              
-        
-            <ToggleCaret teams={this.props.teams} user={this.props.currentUser}/>
+                  </button>
+                </form>
+              ) : null}
+            </div>
+
+            <ToggleCaret
+              teams={this.props.teams}
+              user={this.props.currentUser}
+            />
           </Paper>
         </div>
-        </div>
+      </div>
     );
   }
 }

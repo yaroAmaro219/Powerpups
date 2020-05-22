@@ -27,7 +27,7 @@ function ToggleCaret(props) {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          <Typography className={classes.heading}>P</Typography>
+          <Typography className={classes.heading}>Paris Office</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
