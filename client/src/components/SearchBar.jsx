@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Select, { components } from "react-select";
 
 import '../styles/SearchBar.css';
+import SearchIcon from '@material-ui/icons/Search'
+
 
 const indicatorSeparatorStyle = {
     display: 'none',
@@ -19,8 +21,6 @@ class SearchBar extends Component {
       searchOutput: [],
       searchClicked: false,
     };
-    // this.Option = this.Option.bind(this);
-    // this.truncateString = this.truncateString.bind(this);
   }
 
 
@@ -37,12 +37,12 @@ class SearchBar extends Component {
         <Link
           className="user-profile-link"
           to={{
-            pathname: "#",
+            pathname: "employee-profile",
             state: { userId: props.data.value },
           }}
         >
           <span className="user-avatar"></span>
-          <span className="link-stock-symbol">{props.data.subLabel} {this.truncateString(props.data.label, 40)}</span>
+          <span className="user-name">{props.data.subLabel} {this.truncateString(props.data.label, 40)}</span>
           {/* <span className="link-stock-name"></span> */}
           <span className="user-location">{props.data.location}</span>
         </Link>
@@ -78,7 +78,6 @@ class SearchBar extends Component {
         <div className="search-container">
           <form
             className="form-container"
-            onSubmit={this.props.onSearchSubmit}
             onChange={this.props.onSearchChange}
           >
             <Select

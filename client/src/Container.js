@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import { Route, Switch } from "react-router-dom";
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-import axios from "axios";
-import Login from "./components/Login";
-// import {WEATHER_API_KEY} from './config'
+import React, { Component } from 'react'
+import {withRouter} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
+import Home from './components/Home'
+import Nav from './components/Nav'
+import axios from 'axios'
+import Login from './components/Login'
+import EmployeeProfile from './components/EmployeeProfile';
 
 import {
   registerUser,
@@ -16,9 +16,11 @@ import {
   showTeam,
   destroyTeam,
   putUser,
-} from "./services/api-helper";
-import Register from "./components/Register";
-import Axios from "axios";
+  createEvent,
+  addUserToSquad,
+  createPost,
+} from './services/api-helper'
+import Register from './components/Register'
 
 class Container extends Component {
   constructor(props) {
@@ -85,6 +87,7 @@ class Container extends Component {
   deleteTeam = async (id) => {
     const team = await destroyTeam(id);
     this.setState({ team });
+    this.props.history.push("/");
   };
 
   updateUser = async (id, userData) => {
@@ -201,59 +204,43 @@ class Container extends Component {
     return (
       <div>
         <Switch>
-          <Route
-            exact
-            path="/login"
-            render={(props) => (
-              <Login
-                handleLogin={this.handleLogin}
-                handleChange={this.authHandleChange}
-                authFormData={this.state.authFormData}
-                {...props}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/register"
-            render={(props) => (
-              <Register
-                handleRegister={this.handleRegister}
-                handleChange={this.registerHandleChange}
-                registerFormData={this.state.registerFormData}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Home
-                {...props}
-                handleLogout={this.handleLogout}
-                currentUser={this.state.currentUser}
-                handleChange={this.handleChange}
-                handleSubmit={this.handleSubmit}
-                search={this.state.search}
-                userInput={this.state.userInput}
-                listOfUsers={this.state.listOfUsers}
-                userSearchResults={this.state.userSearchResults}
-                onSearchChange={this.onSearchChange}
-                teams={this.state.teams}
-                addTeam={this.addTeam}
-                deleteTeam={this.deleteTeam}
-              />
-            )}
-          />
-          {/* <Route exact path="/search-bar" render={(props) => (
-            <SearchBar 
+          <Route exact path="/login" render={(props) => (
+            <Login
+              handleLogin={this.handleLogin}
+              handleChange={this.authHandleChange}
+              authFormData={this.state.authFormData}
+              {...props}/>
+          )} />
+          <Route exact path="/register" render={(props) => (
+            <Register
+              handleRegister={this.handleRegister}
+              handleChange={this.registerHandleChange}
+              registerFormData={this.state.registerFormData}
+             />
+          )} />
+          <Route exact path="/" render={(props) => (
+            <Home
+              {...props}
+              handleLogout={this.handleLogout}
+              currentUser={this.state.currentUser}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              search={this.state.search}
               userInput={this.state.userInput}
               listOfUsers={this.state.listOfUsers}
               userSearchResults={this.state.userSearchResults}
               onSearchChange={this.onSearchChange}
-
+              teams={this.state.teams}
+              addTeam={this.addTeam}
+              deleteTeam={this.deleteTeam}
             />
-          )} /> */}
+          )}/>
+          <Route exact path="/employee-profile" render={(props) => (
+            <EmployeeProfile
+              {...props}
+              listOfUsers={this.state.listOfUsers}
+            />
+          )} />
         </Switch>
       </div>
     );
