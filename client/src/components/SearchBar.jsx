@@ -49,6 +49,17 @@ class SearchBar extends Component {
       </components.Option>
     );
   }
+//   SearchInputIcon = () => {
+//     return <SearchIcon />;
+//   };
+
+//   DropdownIndicator = (props) => {
+//     return (
+//       <components.DropdownIndicator {...props}>
+//         <SearchIcon />
+//       </components.DropdownIndicator>
+//     );
+//   };
   IndicatorsContainer = ({ innerProps }) => {
     return <span style={indicatorSeparatorStyle} {...innerProps} />;
   };
@@ -70,11 +81,11 @@ class SearchBar extends Component {
     const selectedOption = this.props.selectedOption;
     const Option = this.Option;
     const IndicatorsContainer = this.IndicatorsContainer;
+    // const DropdownIndicator = this.DropdownIndicator;
     const ValueContainer = this.ValueContainer;
     // const DropdownIndicator = this.DropdownIndicator
     return (
       <div className="search-page-container">
-        {/* <div className={classes.container}> */}
         <div className="search-container">
           <form
             className="form-container"
@@ -85,7 +96,7 @@ class SearchBar extends Component {
               value={selectedOption}
               options={searchOptions}
               onChange={this.props.handleSelect}
-              placeholder="Search Datadog Employees"
+              placeholder={"🔍 Search Datadog Employees"}
               autoFocus={true}
               isSearchable={true}
               isClearable={true}
@@ -97,7 +108,8 @@ class SearchBar extends Component {
               styles={{
                 valueContainer: (base) => ({
                   ...base,
-                  backgroundColor: "#dee8f3",
+                  backgroundColor: "#ffffff",
+                  borderRadius: 5,
                 }),
               }}
               components={{ Option, IndicatorsContainer, ValueContainer }}

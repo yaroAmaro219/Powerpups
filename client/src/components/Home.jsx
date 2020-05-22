@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ToggleCaret from "./ToggleCaret";
 import axios from "axios";
 import SearchBar from "./SearchBar";
-// import Search from "./Search";
+import Search from "./Search";
 
 import Paper from '@material-ui/core/Paper';
 
@@ -81,11 +81,11 @@ export default class Home extends Component {
           </div>
         </Paper>
         <div class="main-container">
-          {/* <Search
+          <Search
             userInput={userInput}
             listOfUsers={listOfUsers}
             onSearchChange={onSearchChange}
-          /> */}
+          />
           <SearchBar
             userInput={userInput}
             listOfUsers={listOfUsers}
