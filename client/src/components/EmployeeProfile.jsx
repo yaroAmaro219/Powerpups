@@ -6,12 +6,24 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import { makeStyles } from '@material-ui/core/styles';
+import '../styles/SearchBar.css';
+
+const useStyles = makeStyles({
+    modal: {
+      width: '50%',
+    },
+    fullList: {
+      width: 'auto',
+    },
+  });
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
+  return <Slide direction="left" ref={ref} {...props} />;
 });
 
 export default function AlertDialogSlide() {
+  const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -23,13 +35,15 @@ export default function AlertDialogSlide() {
   };
 
   return (
-    <div>
+    <div className="profile-modal-container">
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Slide in alert dialog
       </Button>
       <Dialog
+        className={classes.modal}
         open={open}
         TransitionComponent={Transition}
+        transition
         keepMounted
         onClose={handleClose}
         aria-labelledby="alert-dialog-slide-title"
