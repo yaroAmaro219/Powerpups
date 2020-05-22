@@ -29,7 +29,7 @@ const Register = (props) => {
             <input className='register-input-style' placeholder="Phone Number" name="phone" value={registerFormData.phone} onChange={handleChange} />
             <input className='register-input-style' placeholder="Department" name="department" value={registerFormData.department} onChange={handleChange} />
             <input className='register-input-style' placeholder="Title" name="title" value={registerFormData.title} onChange={handleChange} />
-            <input className='register-input-style' placeholder="Title" name="image" value={registerFormData.image} onChange={handleChange} />
+            <input className='register-input-style' placeholder="Birthday" name="birthday" value={registerFormData.birthday} onChange={handleChange} />
             <input className='register-input-style' name='password' type='password' placeholder='Password' value={registerFormData.password} onChange={handleChange} />
           </div>
           <button className='register-submit-button'>Register</button>

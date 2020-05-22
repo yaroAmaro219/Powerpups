@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :events
+  resources :posts
+  resources :members
+  resources :groups
   # =============== AUTH ===============
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
