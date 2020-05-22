@@ -8,5 +8,8 @@
 user1 = User.create!(first_name: "Luke", last_name: "Skywalker", phone:1111111111, email: "hell@hello.com", password:'Luke12345', location: 'Brooklyn', department:'Good', title:'7PM')
 squad12=Squad.create!(name: 'Pepper', users: '3')
 
+member1=Member.create!(user_id: 3, squad_id: 5)
+
 puts "#{User.count} users were created"
 puts "#{Squad.count} users were created"
+puts "#{Member.count} users were created"
