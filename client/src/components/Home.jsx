@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ToggleCaret from './ToggleCaret'
 import axios from 'axios';
 import SearchBar from './SearchBar';
+import Search from './Search';
 
 export default class Home extends Component {
   constructor(props) {
@@ -81,10 +82,10 @@ export default class Home extends Component {
           </div>
         </div>
         <div class="main-container">
-        <form
+        {/* <form
       onSubmit={
         e => this.props.handleSubmit(e)
-      }>
+      }> */}
       {/* <input
         class="search"
         value={this.props.search}
@@ -94,12 +95,18 @@ export default class Home extends Component {
         placeholder='Search Datadog employees'
       />
       <button type="submit">Search</button> */}
+
+      <Search
+        userInput={userInput}
+        listOfUsers={listOfUsers}
+        onSearchChange={onSearchChange}
+      />
       <SearchBar 
         userInput={userInput}
         listOfUsers={listOfUsers}
         onSearchChange={onSearchChange}
       />
-    </form>
+    {/* </form> */}
           <div class="main">
             <h1>
               Hello{" "}

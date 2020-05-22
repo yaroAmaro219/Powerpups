@@ -21,46 +21,38 @@
 
 // export default Search
 
-import React, { useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Select, { components } from "react-select";
 
 import '../styles/SearchBar.css';
-import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-
-c
 
 const indicatorSeparatorStyle = {
     display: 'none',
   };
 
-function Search(props) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [employeeProfile, setEmployeeProfile] = useState({});
+class Search extends Component {
+  constructor(props) {
+    super(props);
 
-  const toggleProfile = (e) => {
-    e.prevenDefault();
-    setIsOpen(true)
+    this.state = {
+      searchInput: "",
+      selectedOption: null,
+      // isSelected
+      searchOutput: [],
+      searchClicked: false,
+    };
   }
 
 
-  const truncateString = (str, num) => {
+  truncateString = (str, num) => {
     if (str.length <= num) {
       return str;
     }
     return str.slice(0, num) + "...";
   }
 
-  const Option = (props) => {
+  Option = (props) => {
     return (
       <components.Option {...props}>
         <Link
@@ -71,20 +63,22 @@ function Search(props) {
           }}
         >
           <span className="user-avatar"></span>
-          <span className="link-stock-symbol">{props.data.subLabel} {truncateString(props.data.label, 40)}</span>
+          <span className="link-stock-symbol">{props.data.subLabel} {this.truncateString(props.data.label, 40)}</span>
+          {/* <span className="link-stock-name"></span> */}
           <span className="user-location">{props.data.location}</span>
         </Link>
       </components.Option>
     );
   }
-  const IndicatorsContainer = ({ innerProps }) => {
+  IndicatorsContainer = ({ innerProps }) => {
     return <span style={indicatorSeparatorStyle} {...innerProps} />;
   };
-  const ValueContainer = (props) => (
+  ValueContainer = (props) => (
     <components.ValueContainer {...props}></components.ValueContainer>
   );
 
-    const searchResults = props.listOfUsers;
+  render() {
+    const searchResults = this.props.listOfUsers;
     console.log(searchResults);
     const searchOptions = searchResults.map(({ first_name, last_name, location }) => {
       return {
@@ -94,14 +88,11 @@ function Search(props) {
         location: location,
       };
     });
-    const selectedOption = props.selectedOption;
-    const Option = Option;
-    const IndicatorsContainer = IndicatorsContainer;
-    const ValueContainer = ValueContainer;
-
-    const employeeProfile = () => {
-      <div className="employee-profile-container">Profile</div>
-    }
+    const selectedOption = this.props.selectedOption;
+    const Option = this.Option;
+    const IndicatorsContainer = this.IndicatorsContainer;
+    const ValueContainer = this.ValueContainer;
+    // const DropdownIndicator = this.DropdownIndicator
     return (
       <div className="search-page-container">
         {/* <div className={classes.container}> */}
@@ -134,9 +125,9 @@ function Search(props) {
             />
           </form>
         </div>
-        <Drawer anchor='left'
       </div>
     );
+  }
 }
 
 export default Search;
