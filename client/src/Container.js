@@ -5,7 +5,7 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import axios from 'axios'
 import Login from './components/Login'
-// import {WEATHER_API_KEY} from './config'
+import EmployeeProfile from './components/EmployeeProfile';
 
 import {
   registerUser,
@@ -18,7 +18,6 @@ import {
   putUser
 } from './services/api-helper'
 import Register from './components/Register'
-import Axios from 'axios'
 
 class Container extends Component {
   constructor(props) {
@@ -227,15 +226,12 @@ class Container extends Component {
               addTeam={this.addTeam}
             />
           )}/>
-          {/* <Route exact path="/search-bar" render={(props) => (
-            <SearchBar 
-              userInput={this.state.userInput}
+          <Route exact path="/employee-profile" render={(props) => (
+            <EmployeeProfile
+              {...props}
               listOfUsers={this.state.listOfUsers}
-              userSearchResults={this.state.userSearchResults}
-              onSearchChange={this.onSearchChange}
-
             />
-          )} /> */}
+          )} />
         </Switch>
       </div>
     )

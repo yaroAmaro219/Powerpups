@@ -9,6 +9,33 @@
 
 /* L */
 
+/* P */
+.profile-modal-container {
+    width: 100%;
+    display: flex;
+
+}
+
+/* ============ S ============ */
+.search-page-container {
+    margin-left: -.5%;
+}
+
+.search-container {
+    display: flex;
+    /* height: 650px; */
+    /* margin-top: 10%; */
+    /* padding-top: 20%; */
+    z-index: 12;
+    /* position: relative; */
+}
+
+.react-select-container {
+    width: 75%;
+    /* box-shadow: 0px 2px 5px 2px #DEE8F3; */
+}
+
+/* ============ U ============= */
 .user-profile-link {
     display: flex;
     align-items: center;
@@ -26,13 +53,8 @@
     background-color: #f0f3fa;
 
 }
-.link-to-stockpage {
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start; */
-    /* border: 1px solid black; */
-}
-.link-stock-symbol {
+
+.user-name {
     width: auto;
     margin-left: 3%;
     /* padding: 6px 10px; */
@@ -41,70 +63,10 @@
     /* font-weight: 600; */
     font-size: 1.2em;
 }
-.link-stock-name {
-    width: auto;
-    margin-left: 1%;
-    font-size: 1.2em;
-}
 
 .user-location {
     padding: 1%;
     margin-left: 15%;
     border-radius: 5px;
     background-color: #f0f3fa;
-
 }
-
-/* S */
-/* .search-page-container {
-    margin-top: 10%;
-} */
-
-.search-container {
-    display: flex;
-    /* height: 650px; */
-    /* margin-top: 10%; */
-    /* padding-top: 20%; */
-    z-index: 12;
-    /* position: relative; */
-}
-.search-autocomplete {
-    /* width: 250px; */
-    display: flex;
-    flex-direction: column;
-}
-
-.search-input-container {
-    display: flex;
-}
-
-/* .search-field {
-    padding: 6% 0 7% 5%;
-    margin-bottom: 7.5%;
-    background-color: #dee8f3;
-    border: none;
-    border-radius: 10px;
-    font-size: 1em;
-} */
-/* .search-field {
-    width: 35%;
-} */
-.react-select-container {
-    width: 75%;
-    /* box-shadow: 0px 2px 5px 2px #DEE8F3; */
-}
-
-.search-submit-button {
-    margin: 0;
-}
-
-.search-output {
-    display: flex;
-    width: 50%;
-    justify-content: space-evenly;
-}
-
-.stock-name-link {
-    display: inline;
-}
-
