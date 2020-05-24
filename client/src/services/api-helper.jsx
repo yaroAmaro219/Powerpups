@@ -1,10 +1,11 @@
 const axios = require("axios");
 
+const baseUrl = process.env.NODE_ENV ===
+  'production' ? 'https://git.heroku.com/power-pups.git' :
+  'http://localhost:3000'
+
 const api = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "production"
-      ? "https://"
-      : "http://localhost:3000",
+  baseURL: baseUrl
 });
 
 export const loginUser = async (loginData) => {
