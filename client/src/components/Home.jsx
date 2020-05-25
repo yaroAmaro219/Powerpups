@@ -72,16 +72,16 @@ export default class Home extends Component {
 
     const { userInput, listOfUsers, onSearchChange } = this.props;
     return (
-      <div class="home">
-        <Paper class="sidebar">
+      <div className="home">
+        <Paper className="sidebar">
           <img src={""} />
-          <h1>My Dashboard</h1>
-          <div class="direct-messages">
+          <h1 className="side-bar-header">My Dashboard</h1>
+          <div classname="direct-messages">
             <p>Direct Messages</p>
 
             {this.props.listOfUsers &&
               this.props.listOfUsers.map((user) => (
-                <div class="users-direct-message">
+                <div className="users-direct-message">
                   <p>{user.name}</p>
                 </div>
               ))}
@@ -89,8 +89,8 @@ export default class Home extends Component {
           <p>Groups</p>
           {this.props.teams &&
             this.props.teams.map((name) => (
-              <div class="group-sidebar">
-                <p class="squad">
+              <div className="group-sidebar">
+                <p className="squad">
                   <p onClick={this.togglePop}>{name.name}</p>
                   {this.state.seen ? (
                     <PopUp
@@ -100,105 +100,119 @@ export default class Home extends Component {
                   ) : null}
                 </p>
                 <button
-                  class="delete"
-                  onClick={() => this.props.deleteTeam(name.id)}>
+                  className="delete"
+                  onClick={() => this.props.deleteTeam(name.id)}
+                >
                   <img src={Delete} />
                 </button>
               </div>
             ))}
 
-          <div class="button-container">
-            <button class="logout" onClick={this.props.handleLogout}>
+          <div className="button-container">
+            <button className="logout" onClick={this.props.handleLogout}>
               Logout
             </button>
-            <button class="button" onClick={this.toggleSet}>
+            <button className="button" onClick={this.toggleSet}>
               Settings
             </button>
             {this.state.setting ? (
-              <div class="settings-container">
-                {this.state.edit
-                  ?
+              <div className="settings-container">
+                {this.state.edit ? (
                   <form>
                     <input
                       onChange={this.props.userHandleChange}
-                      name='first_name'
+                      name="first_name"
                       value={this.props.user.first_name}
-                      placeholder='First Name'
+                      placeholder="First Name"
                     />
-                   <input
+                    <input
                       onChange={this.props.userHandleChange}
-                      name='last_name'
+                      name="last_name"
                       value={this.props.user.last_name}
-                      placeholder='Last Name'
+                      placeholder="Last Name"
                     />
                     <input
-                      name='location'
+                      name="location"
                       value={this.props.user.location}
-                      placeholder='Location'
+                      placeholder="Location"
                       onChange={this.props.userHandleChange}
                     />
                     <input
-                      name='phone'
+                      name="phone"
                       value={this.props.user.phone}
-                      placeholder='Phone'
+                      placeholder="Phone"
                       onChange={this.props.userHandleChange}
                     />
                     <input
-                      name='birthday'
+                      name="birthday"
                       value={this.props.user.birthday}
-                      placeholder='Birthday'
+                      placeholder="Birthday"
                       onChange={this.props.userHandleChange}
                     />
                     <input
-                      name='pronoun'
+                      name="pronoun"
                       value={this.props.user.pronoun}
-                      placeholder='Pronoun'
+                      placeholder="Pronoun"
                       onChange={this.props.userHandleChange}
                     />
                     <input
-                      name='status'
+                      name="status"
                       value={this.props.user.status}
-                      placeholder='Status'
+                      placeholder="Status"
                       onChange={this.props.userHandleChange}
                     />
                   </form>
-                  : 
-                 <div>
-                   <p>
-                  {this.props.currentUser && this.props.currentUser.first_name}
-                </p>
-                <p>
-                  {this.props.currentUser && this.props.currentUser.last_name}
-                </p>
-                  <p>
-                  {this.props.currentUser && this.props.currentUser.location}
-                </p>
-                <p>
-                  {this.props.currentUser && this.props.currentUser.title}
-                </p>
-                <p>
-                  {this.props.currentUser && this.props.currentUser.department}
-                </p>
-                <p>
-                  {this.props.currentUser && this.props.currentUser.phone}
-                </p>
-                    </div>
-                }
-                <div class="buttons-below-edit">
-                <button onClick={(e) => { this.setState({ edit: !this.state.edit }) }}>Edit</button>
-                  <button onClick={(e) => {
-                    this.props.updateUser(this.props.currentUser
-                      && this.props.currentUser.id, this.props.user)
-                  }}>
-                  Submit
+                ) : (
+                  <div>
+                    <p>
+                      {this.props.currentUser &&
+                        this.props.currentUser.first_name}
+                    </p>
+                    <p>
+                      {this.props.currentUser &&
+                        this.props.currentUser.last_name}
+                    </p>
+                    <p>
+                      {this.props.currentUser &&
+                        this.props.currentUser.location}
+                    </p>
+                    <p>
+                      {this.props.currentUser && this.props.currentUser.title}
+                    </p>
+                    <p>
+                      {this.props.currentUser &&
+                        this.props.currentUser.department}
+                    </p>
+                    <p>
+                      {this.props.currentUser && this.props.currentUser.phone}
+                    </p>
+                  </div>
+                )}
+                <div className="buttons-below-edit">
+                  <button
+                    onClick={(e) => {
+                      this.setState({ edit: !this.state.edit });
+                    }}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      this.props.updateUser(
+                        this.props.currentUser && this.props.currentUser.id,
+                        this.props.user
+                      );
+                    }}
+                  >
+                    Submit
                   </button>
                   <button>Delete Account</button>
-                  </div>
+                </div>
               </div>
             ) : null}
           </div>
         </Paper>
-        <div class="main-container">
+        <div className="main-container">
           <form onSubmit={(e) => this.props.handleSubmit(e)}>
             <SearchBar
               userInput={userInput}
@@ -206,34 +220,33 @@ export default class Home extends Component {
               onSearchChange={onSearchChange}
             />
           </form>
-          <div class="main">
+          <div className="main">
             <h1>
               Hello{" "}
               {this.props.currentUser && this.props.currentUser.first_name}
             </h1>
             <p>
-              It is currently 
+              It is currently
               {this.state.weather}
               in
-              <p class="city">
+              <p className="city">
                 {this.props.currentUser && this.props.currentUser.location}
-                
               </p>
             </p>
           </div>
-          <Paper class="notifications">
+          <Paper className="notifications">
             <h1>Here are your latest updates:</h1>
             <p>{""} new messages today</p>
             <p>{""} have birthday's this week</p>
             <p>Happy hour is this thursday at {""}</p>
           </Paper>
-          <Paper class="groups">
-            <div class="teams">
-              <h1 class="teams-title">Teams </h1>
+          <Paper className="groups">
+            <div className="teams">
+              <h1 className="teams-title">Teams </h1>
 
               {this.state.createButton ? (
                 <button
-                  class="create-team-button"
+                  className="create-team-button"
                   onClick={(e) =>
                     this.setState({
                       createButton: false,
@@ -245,7 +258,7 @@ export default class Home extends Component {
                 </button>
               ) : (
                 <button
-                  class="create-team-button"
+                  className="create-team-button"
                   onClick={(e) =>
                     this.setState({
                       createButton: true,
