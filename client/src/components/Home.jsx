@@ -41,13 +41,13 @@ export default class Home extends Component {
     });
   };
 
-  getWeather = async (city) => {
-    let resp = await axios(
-      `http://api.openweathermap.org/data/2.5/weather?${city}&appid=b4f8c7c8fac2ad5dd7b14b760bd9230c/`
-    );
-    console.log(resp.data);
-    return resp.data;
-  };
+  // getWeather = async (city) => {
+  //   let resp = await axios(
+  //     `http://api.openweathermap.org/data/2.5/weather?${city}&appid=b4f8c7c8fac2ad5dd7b14b760bd9230c/`
+  //   );
+  //   console.log(resp.data);
+  //   return resp.data;
+  // };
 
   handleChange = (e) => {
     const value = e.target.value;
