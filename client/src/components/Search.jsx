@@ -1,31 +1,14 @@
-// import React from 'react'
-
-// const Search = ({ onChange, onSubmit, name, value }) => {
-//   return (
-//     <form
-//       onSubmit={
-//         e => onSubmit(e)
-//       }>
-//       <input
-//         class="search"
-//         value={value}
-//         onChange={e => onChange(e)}
-//         name={name}
-//         type="text"
-//         placeholder='Search Datadog employees'
-//       />
-//       <button type="submit">Search</button>
-//     </form>
-//   )
-// }
-
-// export default Search
-
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Select, { components } from "react-select";
 
 import '../styles/SearchBar.css';
+import Drawer from '@material-ui/core/Drawer';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+
 
 const indicatorSeparatorStyle = {
     display: 'none',
@@ -38,11 +21,18 @@ class Search extends Component {
     this.state = {
       searchInput: "",
       selectedOption: null,
-      // isSelected
       searchOutput: [],
       searchClicked: false,
+      isOpen: false,
     };
   }
+  handleProfileOpen = () => {
+    this.setState({ isOpen: true })
+  };
+
+  handleProfileClose = () => {
+    this.setState({ isOpen: false })
+  };
 
 
   truncateString = (str, num) => {
@@ -55,18 +45,20 @@ class Search extends Component {
   Option = (props) => {
     return (
       <components.Option {...props}>
-        <Link
+        {/* <Link */}
+        <div
           className="user-profile-link"
+          onClick={() => this.setState({ isOpen: true})}
           to={{
-            pathname: "employee-profile",
+            pathname: "/",
             state: { userId: props.data.value },
           }}
         >
           <span className="user-avatar"></span>
           <span className="link-stock-symbol">{props.data.subLabel} {this.truncateString(props.data.label, 40)}</span>
-          {/* <span className="link-stock-name"></span> */}
           <span className="user-location">{props.data.location}</span>
-        </Link>
+        {/* </Link> */}
+        </div>
       </components.Option>
     );
   }
@@ -105,7 +97,7 @@ class Search extends Component {
               className="react-select-container"
               value={selectedOption}
               options={searchOptions}
-              onChange={this.props.handleSelect}
+              onChange={this.handleProfileClose}
               placeholder="Search Datadog Employees"
               autoFocus={true}
               isSearchable={true}
@@ -125,6 +117,19 @@ class Search extends Component {
             />
           </form>
         </div>
+        <Drawer
+        className="employee-profile-container"
+        variant="temporary"
+        anchor="right"
+        open={this.state.isOpen}
+      >
+        <div className="profile-header">
+          <IconButton onClick={this.handleProfileClose}>
+            {!this.state.isOpen ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          </IconButton>
+        </div>
+        <Divider />
+      </Drawer>
       </div>
     );
   }

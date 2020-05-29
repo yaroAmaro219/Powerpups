@@ -1,70 +1,253 @@
+// import React from 'react';
+// import Button from '@material-ui/core/Button';
+// import Dialog from '@material-ui/core/Dialog';
+// import DialogActions from '@material-ui/core/DialogActions';
+// import DialogContent from '@material-ui/core/DialogContent';
+// import DialogContentText from '@material-ui/core/DialogContentText';
+// import DialogTitle from '@material-ui/core/DialogTitle';
+// import Slide from '@material-ui/core/Slide';
+// import { makeStyles } from '@material-ui/core/styles';
+// import '../styles/SearchBar.css';
+
+// const useStyles = makeStyles({
+//     modal: {
+//       width: '100%',
+//       marginLeft: '20%',
+//     },
+//     fullList: {
+//       width: 'auto',
+//     },
+//   });
+
+// const Transition = React.forwardRef(function Transition(props, ref) {
+//   return <Slide direction="left" ref={ref} {...props} />;
+// });
+
+// export default function AlertDialogSlide() {
+//   const classes = useStyles();
+//   const [open, setOpen] = React.useState(false);
+
+//   const handleClickOpen = () => {
+//     setOpen(true);
+//   };
+
+//   const handleClose = () => {
+//     setOpen(false);
+//   };
+
+//   return (
+//     <div className="profile-modal-container">
+//       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+//         Slide in alert dialog
+//       </Button>
+//       <Dialog
+//         className={classes.modal}
+//         open={open}
+//         TransitionComponent={Transition}
+//         transitionDuration={500}
+//         keepMounted
+//         onClose={handleClose}
+//         aria-labelledby="alert-dialog-slide-title"
+//         aria-describedby="alert-dialog-slide-description"
+//       >
+//         <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
+//         <DialogContent className="modal-content">
+//           <DialogContentText id="alert-dialog-slide-description">
+//             Let Google help apps determine location. This means sending anonymous location data to
+//             Google, even when no apps are running.
+//           </DialogContentText>
+//         </DialogContent>
+//         <DialogActions>
+//           <Button onClick={handleClose} color="primary">
+//             Disagree
+//           </Button>
+//           <Button onClick={handleClose} color="primary">
+//             Agree
+//           </Button>
+//         </DialogActions>
+//       </Dialog>
+//     </div>
+//   );
+// }
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Slide from '@material-ui/core/Slide';
-import { makeStyles } from '@material-ui/core/styles';
-import '../styles/SearchBar.css';
+import clsx from 'clsx';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import List from '@material-ui/core/List';
+import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import MailIcon from '@material-ui/icons/Mail';
 
-const useStyles = makeStyles({
-    modal: {
-      width: '50%',
-    },
-    fullList: {
-      width: 'auto',
-    },
-  });
+const drawerWidth = 240;
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="left" ref={ref} {...props} />;
-});
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+  },
+  appBar: {
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  appBarShift: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['margin', 'width'], {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    marginRight: drawerWidth,
+  },
+  title: {
+    flexGrow: 1,
+  },
+  hide: {
+    display: 'none',
+  },
+  drawer: {
+    width: drawerWidth,
+    flexShrink: 0,
+  },
+  drawerPaper: {
+    width: drawerWidth,
+  },
+  drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 1),
+    // necessary for content to be below app bar
+    ...theme.mixins.toolbar,
+    justifyContent: 'flex-start',
+  },
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing(3),
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginRight: -drawerWidth,
+  },
+  contentShift: {
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.easeOut,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+    marginRight: 0,
+  },
+}));
 
-export default function AlertDialogSlide() {
+export default function PersistentDrawerRight() {
   const classes = useStyles();
+  const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
+  const handleDrawerOpen = () => {
     setOpen(true);
   };
 
-  const handleClose = () => {
+  const handleDrawerClose = () => {
     setOpen(false);
   };
 
   return (
-    <div className="profile-modal-container">
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Slide in alert dialog
-      </Button>
-      <Dialog
-        className={classes.modal}
-        open={open}
-        TransitionComponent={Transition}
-        transition
-        keepMounted
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-slide-title"
-        aria-describedby="alert-dialog-slide-description"
+    <div className={classes.root}>
+      <CssBaseline />
+      <AppBar
+        position="fixed"
+        className={clsx(classes.appBar, {
+          [classes.appBarShift]: open,
+        })}
       >
-        <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            Let Google help apps determine location. This means sending anonymous location data to
-            Google, even when no apps are running.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
-          </Button>
-        </DialogActions>
-      </Dialog>
+        <Toolbar>
+          <Typography variant="h6" noWrap className={classes.title}>
+            Persistent drawer
+          </Typography>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerOpen}
+            className={clsx(open && classes.hide)}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+      <main
+        className={clsx(classes.content, {
+          [classes.contentShift]: open,
+        })}
+      >
+        <div className={classes.drawerHeader} />
+        <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
+          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
+          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
+          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
+          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
+          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
+          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
+          donec massa sapien faucibus et molestie ac.
+        </Typography>
+        <Typography paragraph>
+          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
+          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
+          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
+          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
+          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
+          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
+          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
+          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
+          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+        </Typography>
+      </main>
+      <Drawer
+        className={classes.drawer}
+        variant="persistent"
+        anchor="right"
+        open={open}
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+      >
+        <div className={classes.drawerHeader}>
+          <IconButton onClick={handleDrawerClose}>
+            {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+          </IconButton>
+        </div>
+        <Divider />
+        <List>
+          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+            <ListItem button key={text}>
+              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          ))}
+        </List>
+        <Divider />
+        <List>
+          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+            <ListItem button key={text}>
+              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          ))}
+        </List>
+      </Drawer>
     </div>
   );
 }
